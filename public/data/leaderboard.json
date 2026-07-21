@@ -17,6 +17,7 @@
       "Three Examples"
     ],
     "noise": [
+      "None",
       "Low",
       "High"
     ],
@@ -25,16 +26,16 @@
       "Direct"
     ]
   },
-  "generated_at": "2026-06-05T20:58:56Z",
+  "generated_at": "2026-07-21T10:22:23Z",
   "rows": [
     {
       "agent": "gpt-5.5",
       "complete": true,
       "date": "2026-05-06",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gpt-5-5-codex-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gpt-5-5-codex-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip"
       },
       "model": "gpt-5.5",
       "rank": 1,
@@ -51,16 +52,16 @@
       },
       "score": 0.847,
       "submission_id": "gpt-5-5-codex-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "gemini-3.1-pro",
       "complete": true,
       "date": "2026-05-18",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gemini-3-1-pro-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gemini-3-1-pro-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
       },
       "model": "gemini_3_1_pro_high",
       "rank": 2,
@@ -77,16 +78,16 @@
       },
       "score": 0.653,
       "submission_id": "gemini-3-1-pro-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "gpt-5.5",
       "complete": true,
       "date": "2026-05-06",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gpt-5-5-codex-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gpt-5-5-codex-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip"
       },
       "model": "gpt-5.5",
       "rank": 1,
@@ -103,19 +104,45 @@
       },
       "score": 0.733,
       "submission_id": "gpt-5-5-codex-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
+    },
+    {
+      "agent": "claude-opus-4.6",
+      "complete": true,
+      "date": "2026-07-02",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/claude-4-opus-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/claude-4-opus-high.zip"
+      },
+      "model": "claude-opus-4-6",
+      "rank": 2,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.593,
+      "submission_id": "claude-4-opus-high",
+      "submitter": "TraceBench"
     },
     {
       "agent": "gemini-3.1-pro",
       "complete": true,
       "date": "2026-05-07",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gemini-3-1-pro-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gemini-3-1-pro-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
       },
       "model": "gemini_3_1_pro_high",
-      "rank": 2,
+      "rank": 3,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -129,19 +156,19 @@
       },
       "score": 0.547,
       "submission_id": "gemini-3-1-pro-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "minimax-m2.7",
       "complete": true,
       "date": "2026-05-19",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/minimax-m2-7.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/minimax-m2-7.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip"
       },
       "model": "openrouter/minimax/minimax-m2.7",
-      "rank": 3,
+      "rank": 4,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -155,16 +182,16 @@
       },
       "score": 0.353,
       "submission_id": "minimax-m2-7",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "gpt-5.5",
       "complete": true,
       "date": "2026-05-06",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gpt-5-5-codex-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gpt-5-5-codex-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip"
       },
       "model": "gpt-5.5",
       "rank": 1,
@@ -181,16 +208,16 @@
       },
       "score": 0.453,
       "submission_id": "gpt-5-5-codex-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "gemini-3.1-pro",
       "complete": true,
       "date": "2026-05-06",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gemini-3-1-pro-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gemini-3-1-pro-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
       },
       "model": "gemini_3_1_pro_high",
       "rank": 2,
@@ -207,16 +234,16 @@
       },
       "score": 0.347,
       "submission_id": "gemini-3-1-pro-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "gpt-5.5",
       "complete": true,
       "date": "2026-05-06",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gpt-5-5-codex-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gpt-5-5-codex-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip"
       },
       "model": "gpt-5.5",
       "rank": 1,
@@ -233,16 +260,16 @@
       },
       "score": 0.853,
       "submission_id": "gpt-5-5-codex-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "gemini-3.1-pro",
       "complete": true,
       "date": "2026-05-06",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gemini-3-1-pro-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gemini-3-1-pro-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
       },
       "model": "gemini_3_1_pro_high",
       "rank": 2,
@@ -259,16 +286,16 @@
       },
       "score": 0.733,
       "submission_id": "gemini-3-1-pro-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "claude-opus-4.6",
       "complete": true,
       "date": "2026-05-07",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/claude-4-opus-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/claude-4-opus-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/claude-4-opus-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/claude-4-opus-high.zip"
       },
       "model": "claude-opus-4-6",
       "rank": 3,
@@ -285,16 +312,16 @@
       },
       "score": 0.687,
       "submission_id": "claude-4-opus-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "minimax-m2.7",
       "complete": true,
       "date": "2026-05-06",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/minimax-m2-7.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/minimax-m2-7.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip"
       },
       "model": "openrouter/minimax/minimax-m2.7",
       "rank": 4,
@@ -311,16 +338,16 @@
       },
       "score": 0.28,
       "submission_id": "minimax-m2-7",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "gpt-5.5",
       "complete": true,
       "date": "2026-05-06",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gpt-5-5-codex-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gpt-5-5-codex-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip"
       },
       "model": "gpt-5.5",
       "rank": 1,
@@ -337,16 +364,16 @@
       },
       "score": 0.887,
       "submission_id": "gpt-5-5-codex-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "gemini-3.1-pro",
       "complete": true,
       "date": "2026-05-06",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gemini-3-1-pro-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gemini-3-1-pro-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
       },
       "model": "gemini_3_1_pro_high",
       "rank": 2,
@@ -363,16 +390,16 @@
       },
       "score": 0.647,
       "submission_id": "gemini-3-1-pro-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "gpt-5.5",
       "complete": true,
       "date": "2026-05-06",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gpt-5-5-codex-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gpt-5-5-codex-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip"
       },
       "model": "gpt-5.5",
       "rank": 1,
@@ -389,16 +416,16 @@
       },
       "score": 0.833,
       "submission_id": "gpt-5-5-codex-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "claude-opus-4.6",
       "complete": true,
       "date": "2026-05-18",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/claude-4-opus-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/claude-4-opus-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/claude-4-opus-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/claude-4-opus-high.zip"
       },
       "model": "claude-opus-4-6",
       "rank": 2,
@@ -415,16 +442,16 @@
       },
       "score": 0.593,
       "submission_id": "claude-4-opus-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "gemini-3.1-pro",
       "complete": true,
       "date": "2026-05-07",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gemini-3-1-pro-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gemini-3-1-pro-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
       },
       "model": "gemini_3_1_pro_high",
       "rank": 3,
@@ -441,16 +468,16 @@
       },
       "score": 0.56,
       "submission_id": "gemini-3-1-pro-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "minimax-m2.7",
       "complete": true,
       "date": "2026-05-19",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/minimax-m2-7.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/minimax-m2-7.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip"
       },
       "model": "openrouter/minimax/minimax-m2.7",
       "rank": 4,
@@ -467,16 +494,16 @@
       },
       "score": 0.3,
       "submission_id": "minimax-m2-7",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "gpt-5.5",
       "complete": true,
       "date": "2026-05-06",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gpt-5-5-codex-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gpt-5-5-codex-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip"
       },
       "model": "gpt-5.5",
       "rank": 1,
@@ -493,16 +520,16 @@
       },
       "score": 0.513,
       "submission_id": "gpt-5-5-codex-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "gemini-3.1-pro",
       "complete": true,
       "date": "2026-05-06",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gemini-3-1-pro-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gemini-3-1-pro-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
       },
       "model": "gemini_3_1_pro_high",
       "rank": 2,
@@ -519,16 +546,16 @@
       },
       "score": 0.313,
       "submission_id": "gemini-3-1-pro-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "gpt-5.5",
       "complete": true,
       "date": "2026-05-06",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gpt-5-5-codex-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gpt-5-5-codex-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip"
       },
       "model": "gpt-5.5",
       "rank": 1,
@@ -545,16 +572,16 @@
       },
       "score": 0.933,
       "submission_id": "gpt-5-5-codex-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "claude-opus-4.6",
       "complete": true,
       "date": "2026-05-07",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/claude-4-opus-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/claude-4-opus-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/claude-4-opus-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/claude-4-opus-high.zip"
       },
       "model": "claude-opus-4-6",
       "rank": 2,
@@ -571,16 +598,16 @@
       },
       "score": 0.853,
       "submission_id": "claude-4-opus-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "gemini-3.1-pro",
       "complete": true,
       "date": "2026-05-06",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gemini-3-1-pro-high.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/gemini-3-1-pro-high.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
       },
       "model": "gemini_3_1_pro_high",
       "rank": 3,
@@ -597,16 +624,16 @@
       },
       "score": 0.76,
       "submission_id": "gemini-3-1-pro-high",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
     },
     {
       "agent": "minimax-m2.7",
       "complete": true,
       "date": "2026-05-06",
       "links": {
-        "artifacts": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/minimax-m2-7.zip",
-        "results": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/results.parquet",
-        "trajectories": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/resolve/main/submissions/minimax-m2-7.zip"
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip"
       },
       "model": "openrouter/minimax/minimax-m2.7",
       "rank": 4,
@@ -623,7 +650,111 @@
       },
       "score": 0.293,
       "submission_id": "minimax-m2-7",
-      "submitter": "TSENV"
+      "submitter": "TraceBench"
+    },
+    {
+      "agent": "gpt-5.5",
+      "complete": true,
+      "date": "2026-05-06",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip"
+      },
+      "model": "gpt-5.5",
+      "rank": 1,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "None",
+        "task_mode": "Direct"
+      },
+      "score": 0.993,
+      "submission_id": "gpt-5-5-codex-high",
+      "submitter": "TraceBench"
+    },
+    {
+      "agent": "claude-opus-4.6",
+      "complete": true,
+      "date": "2026-05-06",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/claude-4-opus-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/claude-4-opus-high.zip"
+      },
+      "model": "claude-opus-4-6",
+      "rank": 2,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "None",
+        "task_mode": "Direct"
+      },
+      "score": 0.973,
+      "submission_id": "claude-4-opus-high",
+      "submitter": "TraceBench"
+    },
+    {
+      "agent": "gemini-3.1-pro",
+      "complete": true,
+      "date": "2026-05-06",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
+      },
+      "model": "gemini_3_1_pro_high",
+      "rank": 3,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "None",
+        "task_mode": "Direct"
+      },
+      "score": 0.947,
+      "submission_id": "gemini-3-1-pro-high",
+      "submitter": "TraceBench"
+    },
+    {
+      "agent": "minimax-m2.7",
+      "complete": true,
+      "date": "2026-05-07",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip"
+      },
+      "model": "openrouter/minimax/minimax-m2.7",
+      "rank": 4,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "None",
+        "task_mode": "Direct"
+      },
+      "score": 0.38,
+      "submission_id": "minimax-m2-7",
+      "submitter": "TraceBench"
     }
   ]
 }

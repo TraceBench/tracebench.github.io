@@ -24,7 +24,7 @@ from validate_website_data import validate
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "public" / "data"
-DEFAULT_REPO = "eth-siplab/tsenvbenchmark"
+DEFAULT_REPO = "eth-siplab/tracebench"
 TOP_LEVEL_FILES = ("summary.json", "leaderboard.json")
 SIMULATORS = ("BallDrop", "BounceBall", "MassSlide")
 HOMEPAGE_DATA_FILENAME = "data_main_page.json"
@@ -40,7 +40,7 @@ WEBSITE_PROMPT_FIELDS = (
     "task_artifact",
     "prediction_format",
 )
-TSENV_DOCUMENTED_PROMPT_FIELDS = (
+TRACEBENCH_DOCUMENTED_PROMPT_FIELDS = (
     "sample_source",
     "environment_description",
     "observed_columns",
@@ -54,13 +54,13 @@ TSENV_DOCUMENTED_PROMPT_FIELDS = (
     "evaluation",
     "runtime_constraints",
 )
-TSENV_LEGACY_PROMPT_FIELDS = (
+TRACEBENCH_LEGACY_PROMPT_FIELDS = (
     "first_sentence",
     "model_description",
     "shared_description",
     "task_instruction",
 )
-TSENV_PROMPT_PLACEHOLDER_RE = re.compile(r"\{([^{}\n]+)\}")
+TRACEBENCH_PROMPT_PLACEHOLDER_RE = re.compile(r"\{([^{}\n]+)\}")
 
 MAIN_PAGE_DURATION_S = 4.0
 MAIN_PAGE_G = 13.5
@@ -202,7 +202,7 @@ def write_json(path: Path, payload: Any) -> None:
     path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
 
-def stringify_tsenv_prompt_value(value: Any) -> str:
+def stringify_tracebench_prompt_value(value: Any) -> str:
     if isinstance(value, (list, tuple)):
         return json.dumps(list(value))
     if isinstance(value, Mapping):
@@ -212,14 +212,14 @@ def stringify_tsenv_prompt_value(value: Any) -> str:
 
 def default_prompt_field_entries(question_text: Mapping[str, Any]) -> list[tuple[str, str]]:
     fields = (
-        TSENV_DOCUMENTED_PROMPT_FIELDS
-        if any(field in question_text for field in TSENV_DOCUMENTED_PROMPT_FIELDS)
-        else TSENV_LEGACY_PROMPT_FIELDS
+        TRACEBENCH_DOCUMENTED_PROMPT_FIELDS
+        if any(field in question_text for field in TRACEBENCH_DOCUMENTED_PROMPT_FIELDS)
+        else TRACEBENCH_LEGACY_PROMPT_FIELDS
     )
     return [(field, "\n\n" if index < len(fields) - 1 else "") for index, field in enumerate(fields)]
 
 
-def tsenv_prompt_field_entries(question_text: Mapping[str, Any]) -> list[tuple[str, str]]:
+def tracebench_prompt_field_entries(question_text: Mapping[str, Any]) -> list[tuple[str, str]]:
     field_order_raw = question_text.get("ordered_field_agent_prompt")
     if not (isinstance(field_order_raw, list) and field_order_raw):
         return default_prompt_field_entries(question_text)
@@ -283,7 +283,7 @@ def placeholder_target_slug(raw_slug: str | None, *, current_question_slug: str 
     return target_slug or current_question_slug
 
 
-def resolve_tsenv_question_text_placeholder(
+def resolve_tracebench_question_text_placeholder(
     *,
     body: str,
     target_slug: str | None,
@@ -298,7 +298,7 @@ def resolve_tsenv_question_text_placeholder(
         raise KeyError(body)
     lookup_key = f"{target_slug or '<current>'}.question_text.{field_path}"
     if lookup_key in stack:
-        raise ValueError(f"Recursive tsENV prompt placeholder: {lookup_key}")
+        raise ValueError(f"Recursive TraceBench prompt placeholder: {lookup_key}")
     source_text = question_text_for_placeholder(
         target_slug=target_slug,
         current_question_text=current_question_text,
@@ -308,8 +308,8 @@ def resolve_tsenv_question_text_placeholder(
     try:
         resolved_value = resolve_mapping_path(source_text, field_path.split("."))
     except KeyError as exc:
-        raise KeyError(f"Could not resolve tsENV prompt placeholder {{{body}}}") from exc
-    return resolve_tsenv_prompt_placeholders(
+        raise KeyError(f"Could not resolve TraceBench prompt placeholder {{{body}}}") from exc
+    return resolve_tracebench_prompt_placeholders(
         resolved_value,
         current_question_text=current_question_text,
         current_question_slug=current_question_slug,
@@ -319,7 +319,7 @@ def resolve_tsenv_question_text_placeholder(
     )
 
 
-def resolve_tsenv_questions_namespace_placeholder(
+def resolve_tracebench_questions_namespace_placeholder(
     *,
     body: str,
     current_question_text: Mapping[str, Any],
@@ -333,7 +333,7 @@ def resolve_tsenv_questions_namespace_placeholder(
         raise KeyError(body)
     target_slug, separator, field_path = tail.partition(".question_text.")
     if separator:
-        return resolve_tsenv_question_text_placeholder(
+        return resolve_tracebench_question_text_placeholder(
             body=body,
             target_slug=placeholder_target_slug(target_slug, current_question_slug=current_question_slug),
             field_path=field_path,
@@ -347,12 +347,12 @@ def resolve_tsenv_questions_namespace_placeholder(
         raise KeyError(body)
     lookup_key = f"questions.{tail}"
     if lookup_key in stack:
-        raise ValueError(f"Recursive tsENV prompt placeholder: {lookup_key}")
+        raise ValueError(f"Recursive TraceBench prompt placeholder: {lookup_key}")
     try:
         resolved_value = resolve_mapping_path(questions_metadata, tail.split("."))
     except KeyError as exc:
-        raise KeyError(f"Could not resolve tsENV prompt placeholder {{{body}}}") from exc
-    return resolve_tsenv_prompt_placeholders(
+        raise KeyError(f"Could not resolve TraceBench prompt placeholder {{{body}}}") from exc
+    return resolve_tracebench_prompt_placeholders(
         resolved_value,
         current_question_text=current_question_text,
         current_question_slug=current_question_slug,
@@ -362,7 +362,7 @@ def resolve_tsenv_questions_namespace_placeholder(
     )
 
 
-def resolve_tsenv_prompt_placeholder_body(
+def resolve_tracebench_prompt_placeholder_body(
     body: str,
     *,
     current_question_text: Mapping[str, Any],
@@ -372,7 +372,7 @@ def resolve_tsenv_prompt_placeholder_body(
     stack: tuple[str, ...],
 ) -> str | None:
     if body.startswith("questions."):
-        return resolve_tsenv_questions_namespace_placeholder(
+        return resolve_tracebench_questions_namespace_placeholder(
             body=body,
             current_question_text=current_question_text,
             current_question_slug=current_question_slug,
@@ -381,7 +381,7 @@ def resolve_tsenv_prompt_placeholder_body(
             stack=stack,
         )
     if body.startswith("<question_slug>.question_text."):
-        return resolve_tsenv_question_text_placeholder(
+        return resolve_tracebench_question_text_placeholder(
             body=body,
             target_slug=current_question_slug,
             field_path=body.removeprefix("<question_slug>.question_text."),
@@ -392,7 +392,7 @@ def resolve_tsenv_prompt_placeholder_body(
             stack=stack,
         )
     if body.startswith("question_text."):
-        return resolve_tsenv_question_text_placeholder(
+        return resolve_tracebench_question_text_placeholder(
             body=body,
             target_slug=current_question_slug,
             field_path=body.removeprefix("question_text."),
@@ -405,7 +405,7 @@ def resolve_tsenv_prompt_placeholder_body(
     target_slug, separator, field_path = body.partition(".question_text.")
     if not separator:
         return None
-    return resolve_tsenv_question_text_placeholder(
+    return resolve_tracebench_question_text_placeholder(
         body=body,
         target_slug=placeholder_target_slug(target_slug, current_question_slug=current_question_slug),
         field_path=field_path,
@@ -417,7 +417,7 @@ def resolve_tsenv_prompt_placeholder_body(
     )
 
 
-def resolve_tsenv_prompt_placeholders(
+def resolve_tracebench_prompt_placeholders(
     value: Any,
     *,
     current_question_text: Mapping[str, Any],
@@ -426,13 +426,13 @@ def resolve_tsenv_prompt_placeholders(
     questions_metadata: Mapping[str, Any] | None,
     stack: tuple[str, ...] = (),
 ) -> str:
-    text = stringify_tsenv_prompt_value(value)
+    text = stringify_tracebench_prompt_value(value)
     if "question_text." not in text and "{questions." not in text:
         return text.strip()
 
     def replace(match: re.Match[str]) -> str:
         body = match.group(1).strip()
-        resolved = resolve_tsenv_prompt_placeholder_body(
+        resolved = resolve_tracebench_prompt_placeholder_body(
             body,
             current_question_text=current_question_text,
             current_question_slug=current_question_slug,
@@ -442,7 +442,7 @@ def resolve_tsenv_prompt_placeholders(
         )
         return match.group(0) if resolved is None else resolved
 
-    return TSENV_PROMPT_PLACEHOLDER_RE.sub(replace, text).strip()
+    return TRACEBENCH_PROMPT_PLACEHOLDER_RE.sub(replace, text).strip()
 
 
 def website_prompt_field(
@@ -455,7 +455,7 @@ def website_prompt_field(
 ) -> str:
     if field not in question_text:
         return ""
-    return resolve_tsenv_prompt_placeholders(
+    return resolve_tracebench_prompt_placeholders(
         question_text.get(field),
         current_question_text=question_text,
         current_question_slug=str(question_slug or "").strip() or None,
@@ -568,7 +568,7 @@ def render_website_prompt(
     return "\n\n".join(block for block in blocks if block.strip()).strip()
 
 
-def render_documented_tsenv_agent_prompt(
+def render_documented_tracebench_agent_prompt(
     question_text: Mapping[str, Any],
     *,
     question_slug: str | None = None,
@@ -577,12 +577,12 @@ def render_documented_tsenv_agent_prompt(
 ) -> str:
     prompt_parts: list[str] = []
     pending_separator = ""
-    for field, separator in tsenv_prompt_field_entries(question_text):
+    for field, separator in tracebench_prompt_field_entries(question_text):
         if field not in question_text:
             if prompt_parts:
                 pending_separator = separator
             continue
-        rendered = resolve_tsenv_prompt_placeholders(
+        rendered = resolve_tracebench_prompt_placeholders(
             question_text.get(field),
             current_question_text=question_text,
             current_question_slug=str(question_slug or "").strip() or None,
@@ -620,15 +620,21 @@ def download_file(url: str, destination: Path) -> None:
         raise RuntimeError(f"failed to download {url}: {exc.reason}") from exc
 
 
-def candidate_tsenv_roots(explicit_root: Path | None) -> list[Path]:
+def candidate_tracebench_roots(explicit_root: Path | None) -> list[Path]:
     roots: list[Path] = []
     if explicit_root is not None:
         roots.append(explicit_root)
-    env_root = os.environ.get("TSENV_REPO_ROOT", "").strip()
+    env_root = (
+        os.environ.get("TRACEBENCH_REPO_ROOT", "").strip()
+        or os.environ.get("TSENV_REPO_ROOT", "").strip()
+    )
     if env_root:
         roots.append(Path(env_root))
     roots.extend(
         [
+            ROOT / "_TraceBench",
+            ROOT.parent / "TraceBench",
+            ROOT.parent / "tracebench",
             ROOT / "_tsENV",
             ROOT.parent / "tsENV",
             ROOT.parent / "tsenv",
@@ -645,9 +651,9 @@ def candidate_tsenv_roots(explicit_root: Path | None) -> list[Path]:
     return deduped
 
 
-def load_prompt_renderer(tsenv_root: Path | None) -> PromptRenderer:
+def load_prompt_renderer(tracebench_root: Path | None) -> PromptRenderer:
     checked: list[str] = []
-    for root in candidate_tsenv_roots(tsenv_root):
+    for root in candidate_tracebench_roots(tracebench_root):
         checked.append(str(root))
         if not (root / "shared" / "prompts.py").is_file():
             continue
@@ -656,14 +662,14 @@ def load_prompt_renderer(tsenv_root: Path | None) -> PromptRenderer:
         try:
             from shared.prompts import render_tsenv_agent_prompt
         except Exception as exc:  # noqa: BLE001 - expose import failure with context.
-            raise RuntimeError(f"could not import TSENV prompt renderer from {root}: {exc}") from exc
+            raise RuntimeError(f"could not import TraceBench prompt renderer from {root}: {exc}") from exc
         return render_tsenv_agent_prompt
     print(
-        "TSENV prompt renderer checkout not found; using local documented prompt renderer. "
+        "TraceBench prompt renderer checkout not found; using local documented prompt renderer. "
         f"Checked: {', '.join(checked)}",
         file=sys.stderr,
     )
-    return render_documented_tsenv_agent_prompt
+    return render_documented_tracebench_agent_prompt
 
 
 def sample_bucket(value: Any) -> str | None:
@@ -787,9 +793,9 @@ def rendered_homepage_prompt_combinations(questions_path: Path) -> list[dict[str
     return combinations
 
 
-def sync_from_hf(repo: str, revision: str, output_dir: Path, tsenv_root: Path | None) -> None:
+def sync_from_hf(repo: str, revision: str, output_dir: Path, tracebench_root: Path | None) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
-    prompt_renderer = load_prompt_renderer(tsenv_root)
+    prompt_renderer = load_prompt_renderer(tracebench_root)
     for filename in TOP_LEVEL_FILES:
         download_file(hf_url(repo, f"website/{filename}", revision), output_dir / filename)
     environments_dir = output_dir / "environments"
@@ -838,19 +844,25 @@ def sync_from_hf(repo: str, revision: str, output_dir: Path, tsenv_root: Path | 
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Sync TSENV website data from Hugging Face.")
+    parser = argparse.ArgumentParser(description="Sync TraceBench website data from Hugging Face.")
     parser.add_argument("--hf-repo", default=DEFAULT_REPO)
     parser.add_argument("--revision", default="main")
     parser.add_argument("--output-dir", type=Path, default=DATA)
     parser.add_argument("--source-dir", type=Path, help="Copy browser-ready data from a local directory instead of Hugging Face.")
-    parser.add_argument("--tsenv-root", type=Path, help="Path to a tsENV checkout containing shared/prompts.py.")
+    parser.add_argument(
+        "--tracebench-root",
+        "--tsenv-root",
+        dest="tracebench_root",
+        type=Path,
+        help="Path to a TraceBench checkout containing shared/prompts.py.",
+    )
     parser.add_argument("--validate-only", action="store_true", help="Only validate the output directory.")
     args = parser.parse_args()
 
     if args.source_dir:
         copy_tree(args.source_dir, args.output_dir)
     elif not args.validate_only:
-        sync_from_hf(args.hf_repo, args.revision, args.output_dir, args.tsenv_root)
+        sync_from_hf(args.hf_repo, args.revision, args.output_dir, args.tracebench_root)
 
     try:
         validate(args.output_dir)

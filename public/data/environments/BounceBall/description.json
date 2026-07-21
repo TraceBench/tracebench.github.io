@@ -6,7 +6,7 @@
     "coefficient of restitution of the left wall",
     "inclination angle of the rail"
   ],
-  "download_link": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/tree/main/questions/BounceBall",
+  "download_link": "https://huggingface.co/datasets/eth-siplab/tracebench/tree/main/questions/BounceBall",
   "environment_id": "BounceBall",
   "name": "BounceBall",
   "observed_channels": [

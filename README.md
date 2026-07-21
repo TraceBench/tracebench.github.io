@@ -1,16 +1,16 @@
-# TSENV Website
+# TraceBench Website
 
-Static single-page application for the public TSENV benchmark website at
-`https://tsenv.github.io/`.
+Static single-page application for the public TraceBench benchmark website at
+`https://tracebench.github.io/`.
 
 The site is a rendering layer only. Benchmark results, trajectories, generated
 question data, and accepted submissions are treated as canonical in the
-Hugging Face dataset repository `eth-siplab/tsenvbenchmark`.
+Hugging Face dataset repository `eth-siplab/tracebench`.
 
 ## Preview Locally
 
 ```bash
-cd /Users/tbe/repos/tsenv.github.io
+cd /Users/tbe/repos/tracebench.github.io
 python3 scripts/serve.py
 ```
 
@@ -47,8 +47,8 @@ Regenerate from Hugging Face:
 
 ```bash
 python3 scripts/sync_hf_to_website_data.py \
-  --hf-repo eth-siplab/tsenvbenchmark \
-  --tsenv-root /Users/tbe/repos/public/tsEnv
+  --hf-repo eth-siplab/tracebench \
+  --tracebench-root /Users/tbe/repos/TraceBench
 ```
 
 For local prepared data:

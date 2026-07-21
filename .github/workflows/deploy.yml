@@ -25,23 +25,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
-          repository: TommasoBendinelli/tsENV
-          path: _tsENV
+          repository: TommasoBendinelli/TraceBench
+          path: _TraceBench
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
       - run: pip install -r requirements.txt
-      - run: python scripts/sync_hf_to_website_data.py --hf-repo eth-siplab/tsenvbenchmark --tsenv-root _tsENV
+      - run: python scripts/sync_hf_to_website_data.py --hf-repo eth-siplab/tracebench --tracebench-root _TraceBench
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
       - run: python scripts/validate_website_data.py
-      - run: rm -rf _tsENV
+      - run: rm -rf _TraceBench
 
       - uses: actions/configure-pages@v5
 

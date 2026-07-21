@@ -17,8 +17,8 @@ const context = {
   HTMLSelectElement: class HTMLSelectElement {},
 };
 context.window = {
-  __TSENV_DISABLE_AUTORUN__: true,
-  __TSENV_ENABLE_TEST_API__: true,
+  __TRACEBENCH_DISABLE_AUTORUN__: true,
+  __TRACEBENCH_ENABLE_TEST_API__: true,
   addEventListener() {},
   requestAnimationFrame(callback) {
     callback();
@@ -34,7 +34,7 @@ context.globalThis = context;
 
 vm.runInNewContext(source, context, { filename: "assets/app.js" });
 
-const api = context.window.__TSENV_TEST__;
+const api = context.window.__TRACEBENCH_TEST__;
 assert.ok(api, "app.js should expose test helpers");
 
 const description = {

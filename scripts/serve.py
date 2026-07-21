@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Local static server with SPA fallback for the TSENV website.
+"""Local static server with SPA fallback for the TraceBench website.
 
 Usage:
-  cd /Users/tbe/repos/tsenv.github.io
+  cd /Users/tbe/repos/tracebench.github.io
   python3 scripts/serve.py
 
 Then open http://localhost:8000/. Direct nested routes such as
@@ -48,5 +48,5 @@ class SpaHandler(SimpleHTTPRequestHandler):
 
 if __name__ == "__main__":
     server = FastThreadingHTTPServer((HOST, PORT), SpaHandler)
-    print(f"Serving TSENV website at http://localhost:{PORT}/")
+    print(f"Serving TraceBench website at http://localhost:{PORT}/")
     server.serve_forever()

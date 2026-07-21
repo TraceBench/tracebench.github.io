@@ -243,7 +243,7 @@ function shell(content) {
   return `
     <header class="site-header">
       <div class="header-inner">
-        <a class="wordmark" href="/" data-link>TSENV</a>
+        <a class="wordmark" href="/" data-link>TraceBench</a>
         <nav class="nav-links" aria-label="Primary navigation">
           <a href="/" data-link class="${navActive("home") ? "active" : ""}">Home</a>
           <a href="/results/" data-link class="${navActive("results") ? "active" : ""}">Results</a>
@@ -593,7 +593,7 @@ async function renderHome() {
 
   const content = `
     <section class="hero">
-      <h1>TSENV: Controllable Time-Series Exploration Benchmark</h1>
+      <h1>TraceBench: A Controllable Benchmark for Agentic Root-Cause Analysis of Time Series</h1>
       <p>A benchmark for evaluating whether tool-using agents can perform evidence-grounded analysis of multivariate time series.</p>
       <p>Tasks are generated from physical simulators with known interventions. Agents must combine textual descriptions, noisy observations, and optional labeled examples to identify what changed, or that no intervention occurred.</p>
     </section>
@@ -637,7 +637,7 @@ async function renderHome() {
       <div class="feature-list">
         <div class="feature-item"><strong>Physics-grounded generation.</strong><p>Samples are produced by simulators rather than by static datasets, giving reliable intervention labels and controllable task variants.</p></div>
         <div class="feature-item"><strong>Evidence-grounded agent evaluation.</strong><p>Correct answers require inspecting the observed signals; textual context alone is not sufficient.</p></div>
-        <div class="feature-item"><strong>Controlled difficulty axes.</strong><p>TSENV varies textual context, observation noise, labeled examples, and answer interface in matched experimental conditions.</p></div>
+        <div class="feature-item"><strong>Controlled difficulty axes.</strong><p>TraceBench varies textual context, observation noise, labeled examples, and answer interface in matched experimental conditions.</p></div>
       </div>
     </section>
   `;
@@ -671,7 +671,7 @@ function renderLeaderboardTable(rows) {
   const sortMark = key => state.results.sortKey === key ? (state.results.sortDir === "asc" ? " ↑" : " ↓") : "";
   return `
     <div class="table-wrap">
-      <table aria-label="TSENV leaderboard">
+      <table aria-label="TraceBench leaderboard">
         <thead><tr>${headers.map(([key, label]) => `<th><button data-action="sort" data-key="${key}">${label}${sortMark(key)}</button></th>`).join("")}</tr></thead>
         <tbody>
           ${sorted.map(row => {
@@ -856,6 +856,7 @@ async function renderResultDetail(submissionId) {
 
       <section class="section">
         <div class="section-header"><h2>Downloads</h2></div>
+        <p class="muted">The trajectory archive contains raw scores, ATIF trajectories, and generated artifacts for ${Number(detail.archive_contract?.run_count || detail.per_seed_results.length)} runs.</p>
         <p><a href="${detail.downloads.trajectory_archive}" target="_blank" rel="noreferrer">Trajectory archive</a> · <a href="${detail.downloads.complete_results_table}" target="_blank" rel="noreferrer">Complete results table</a> · <a href="${detail.downloads.benchmark_dataset}" target="_blank" rel="noreferrer">Benchmark dataset</a></p>
       </section>
     </section>
@@ -934,8 +935,8 @@ async function renderEnvironmentDetail(environmentId) {
 
 function renderGetStarted() {
   const quickStart = `# Clone and install
-git clone ${siteValue("code_url", "<TSENV_PUBLIC_REPOSITORY_URL>")}
-cd tsENV
+git clone ${siteValue("code_url", "<TRACEBENCH_PUBLIC_REPOSITORY_URL>")}
+cd TraceBench
 python -m venv env
 source env/bin/activate
 pip install -e .
@@ -945,7 +946,7 @@ bash web_model_explorer/start.sh
 
 # Run one agentic evaluation
 python workflows/rollout/question_run_orchestrator.py \\
-  --tasks-dir tsENV_questions \\
+  --tasks-dir TraceBench_questions \\
   --model BallDrop \\
   --agent-id <AGENT_ID> \\
   --row-slug <ROW_SLUG>`;
@@ -969,7 +970,7 @@ python workflows/rollout/question_run_orchestrator.py \\
   const content = `
     <section>
       <h1 class="page-title">Get Started and Submit</h1>
-      <p class="page-subtitle">Run TSENV locally, inspect the data explorer, and submit one structured agent result bundle through GitHub.</p>
+      <p class="page-subtitle">Run TraceBench locally, inspect the data explorer, and submit one structured agent result bundle through GitHub.</p>
       <div class="code-shell">
         <div class="code-shell-header"><span>Run locally</span><button class="copy-button" data-action="copy-code" data-copy-target="quick-start-code">copy</button></div>
         <pre id="quick-start-code" class="code-block">${escapeHtml(quickStart)}</pre>
@@ -1005,7 +1006,7 @@ function renderContributors() {
       const nameHtml = url ? `<a href="${url}" target="_blank" rel="noreferrer">${name}</a>` : name;
       return `<p><strong>${nameHtml}</strong>${affiliation ? `, ${affiliation}` : ""}</p>`;
     }).join("")
-    : `<p><strong>TSENV contributors to be announced</strong></p>`;
+    : `<p><strong>TraceBench contributors to be announced</strong></p>`;
   const contactLinks = [
     contact.url ? [contact.label || "Contact", contact.url] : null,
     siteValue("code_url") ? ["Repository", siteValue("code_url")] : null,
@@ -1080,8 +1081,8 @@ async function render() {
   }
 }
 
-if (window.__TSENV_ENABLE_TEST_API__) {
-  window.__TSENV_TEST__ = {
+if (window.__TRACEBENCH_ENABLE_TEST_API__) {
+  window.__TRACEBENCH_TEST__ = {
     applyAdaptiveAndBaseNoise,
     dataWithPlotNoise,
     findPrompt,
@@ -1174,6 +1175,6 @@ document.addEventListener("change", event => {
 });
 
 window.addEventListener("popstate", render);
-if (!window.__TSENV_DISABLE_AUTORUN__) {
+if (!window.__TRACEBENCH_DISABLE_AUTORUN__) {
   render();
 }

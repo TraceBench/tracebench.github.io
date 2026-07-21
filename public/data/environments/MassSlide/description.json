@@ -5,7 +5,7 @@
     "Coulomb friction coefficient",
     "breakaway friction coefficient"
   ],
-  "download_link": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/tree/main/questions/MassSlide",
+  "download_link": "https://huggingface.co/datasets/eth-siplab/tracebench/tree/main/questions/MassSlide",
   "environment_id": "MassSlide",
   "name": "MassSlide",
   "observed_channels": [

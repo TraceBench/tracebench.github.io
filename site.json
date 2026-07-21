@@ -1,9 +1,9 @@
 {
-  "website_url": "https://tsenv.github.io/",
-  "code_url": "https://github.com/TommasoBendinelli/tsENV",
-  "hf_repo": "eth-siplab/tsenvbenchmark",
-  "hf_dataset_url": "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark",
-  "issues_url": "https://github.com/TommasoBendinelli/tsENV/issues",
+  "website_url": "https://tracebench.github.io/",
+  "code_url": "https://github.com/TommasoBendinelli/TraceBench",
+  "hf_repo": "eth-siplab/tracebench",
+  "hf_dataset_url": "https://huggingface.co/datasets/eth-siplab/tracebench",
+  "issues_url": "https://github.com/TommasoBendinelli/TraceBench/issues",
   "affiliation_url": "https://siplab.org/",
   "paper_url": "https://arxiv.org",
   "contributors": [
@@ -15,7 +15,7 @@
   ],
   "contact": {
     "label": "GitHub issues",
-    "url": "https://github.com/TommasoBendinelli/tsENV/issues"
+    "url": "https://github.com/TommasoBendinelli/TraceBench/issues"
   },
-  "citation": "@inproceedings{tsenv2026,\n  title={TSENV: Controllable Time-Series Exploration Benchmark for Agents},\n  author={Tommaso Bendinelli and Artur Dox and Christian Holz},\n  year={2026}\n}"
+  "citation": "@inproceedings{tracebench2026,\n  title={TraceBench: A Controllable Benchmark for Agentic Root-Cause Analysis of Time Series},\n  author={Tommaso Bendinelli and Artur Dox and Christian Holz},\n  year={2026}\n}"
 }

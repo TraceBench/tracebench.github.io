@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate browser-ready TSENV website data."""
+"""Validate browser-ready TraceBench website data."""
 
 from __future__ import annotations
 
@@ -72,6 +72,8 @@ def validate_leaderboard(data_dir: Path) -> None:
             for key in ("rank", "submission_id", "agent", "model", "score", "date", "submitter", "scope"):
                 require(key in row, f"leaderboard row missing {key}")
             require(row.get("complete") is not False, f"leaderboard row {row.get('submission_id')} is incomplete")
+            detail = read_json(data_dir / "submissions" / f"{row['submission_id']}.json")
+            validate_submission_archive_contract(detail, str(row["submission_id"]))
         return
 
     conditions = leaderboard.get("conditions")
@@ -86,10 +88,25 @@ def validate_leaderboard(data_dir: Path) -> None:
             require(row["seedIds"] == REQUIRED_SEEDS, f"condition record {row.get('id')} must list seeds {REQUIRED_SEEDS}")
 
 
+def validate_submission_archive_contract(detail: Any, submission_id: str) -> None:
+    require(isinstance(detail, dict), f"{submission_id}.json must be an object")
+    per_seed_results = detail.get("per_seed_results")
+    require(isinstance(per_seed_results, list) and per_seed_results, f"{submission_id}.json missing per_seed_results")
+    contract = detail.get("archive_contract")
+    require(isinstance(contract, dict), f"{submission_id}.json missing archive_contract")
+    require(contract.get("schema_version") == 1, f"{submission_id}.json has unknown archive schema")
+    for key in ("contains_raw_scores", "contains_raw_trajectories", "contains_artifacts"):
+        require(contract.get(key) is True, f"{submission_id}.json archive contract missing {key}")
+    require(
+        contract.get("run_count") == len(per_seed_results),
+        f"{submission_id}.json archive run count must match per_seed_results",
+    )
+
+
 def validate_environments(data_dir: Path, summary: dict[str, Any]) -> None:
     simulators = summary.get("simulators") or ["BallDrop", "BounceBall", "MassSlide"]
     require(isinstance(simulators, list) and simulators, "summary.json must include simulators")
-    require(simulators == REQUIRED_SIMULATORS, "summary.json simulators must match the public TSENV simulators")
+    require(simulators == REQUIRED_SIMULATORS, "summary.json simulators must match the public TraceBench simulators")
     for simulator in simulators:
         env_dir = data_dir / "environments" / str(simulator)
         description = read_json(env_dir / "description.json")
@@ -105,7 +122,7 @@ def validate_environments(data_dir: Path, summary: dict[str, Any]) -> None:
                 f"{simulator}/description.json must not include homepage_prompt_combinations",
             )
         expected_download_link = (
-            "https://huggingface.co/datasets/eth-siplab/tsenvbenchmark/tree/main/questions/"
+            "https://huggingface.co/datasets/eth-siplab/tracebench/tree/main/questions/"
             f"{simulator}"
         )
         require(
@@ -215,6 +232,16 @@ def validate_site_metadata(root: Path = ROOT) -> None:
     require(site["contact"].get("label"), "site.json contact missing label")
     require(site["contact"].get("url"), "site.json contact missing url")
     require(isinstance(site["citation"], str) and site["citation"].strip(), "site.json citation must be a non-empty string")
+    expected_values = {
+        "website_url": "https://tracebench.github.io/",
+        "code_url": "https://github.com/TommasoBendinelli/TraceBench",
+        "hf_repo": "eth-siplab/tracebench",
+        "hf_dataset_url": "https://huggingface.co/datasets/eth-siplab/tracebench",
+        "issues_url": "https://github.com/TommasoBendinelli/TraceBench/issues",
+    }
+    for key, expected in expected_values.items():
+        require(site.get(key) == expected, f"site.json {key} must be {expected}")
+    require("TraceBench" in site["citation"], "site.json citation must identify TraceBench")
 
 
 def validate(data_dir: Path = DATA) -> None:
@@ -232,14 +259,14 @@ def validate(data_dir: Path = DATA) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Validate generated TSENV website JSON data.")
+    parser = argparse.ArgumentParser(description="Validate generated TraceBench website JSON data.")
     parser.add_argument("--data-dir", type=Path, default=DATA)
     args = parser.parse_args()
     try:
         validate(args.data_dir)
     except ValidationError as exc:
         raise SystemExit(f"Website data validation failed: {exc}") from exc
-    print(f"Validated TSENV website data in {args.data_dir}")
+    print(f"Validated TraceBench website data in {args.data_dir}")
 
 
 if __name__ == "__main__":
