@@ -18,6 +18,13 @@ SPEC.loader.exec_module(materialize_routes)
 
 
 class MaterializeRoutesTest(unittest.TestCase):
+    def test_repository_route_entries_are_current(self) -> None:
+        index_html = (ROOT / "index.html").read_bytes()
+        for route in materialize_routes.public_routes(ROOT):
+            target = ROOT / route / "index.html"
+            self.assertTrue(target.is_file(), f"missing static route entry: {target}")
+            self.assertEqual(target.read_bytes(), index_html)
+
     def test_materializes_static_and_data_driven_routes(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
