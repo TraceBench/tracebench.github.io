@@ -41,6 +41,7 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
       - run: python scripts/validate_website_data.py
+      - run: python scripts/materialize_routes.py
       - run: rm -rf _TraceBench
 
       - uses: actions/configure-pages@v5
