@@ -146,4 +146,44 @@ assert.equal(environmentPayload.config.displayModeBar, true, "environment plot s
 assert.equal(environmentPayload.config.scrollZoom, true, "environment plot should allow scroll zoom");
 assert.notEqual(environmentPayload.config.staticPlot, true, "environment plot should remain interactive");
 
+const interactiveHandlers = new Map();
+const relayoutCalls = [];
+const interactiveElement = {
+  on(eventName, handler) {
+    interactiveHandlers.set(eventName, handler);
+  },
+};
+context.document.getElementById = () => interactiveElement;
+context.window.Plotly = {
+  react() {},
+  relayout(element, update) {
+    relayoutCalls.push({ element, update });
+  },
+};
+api.mountPlots();
+
+const handleRestyle = interactiveHandlers.get("plotly_restyle");
+assert.equal(typeof handleRestyle, "function", "environment plots should react to trace visibility changes");
+handleRestyle([{ visible: "legendonly" }, [1]]);
+assert.equal(relayoutCalls.length, 1, "single-trace visibility changes should trigger y-axis autorange");
+assert.equal(relayoutCalls[0].element, interactiveElement, "autorange should update the mounted plot");
+assert.equal(relayoutCalls[0].update["yaxis.autorange"], true, "autorange should be enabled for the y-axis");
+
+handleRestyle([{ "line.width": 3 }, [0]]);
+assert.equal(relayoutCalls.length, 1, "unrelated restyles should preserve the current y-axis range");
+
+handleRestyle([{ visible: [true, "legendonly"] }, [0, 1]]);
+assert.equal(relayoutCalls.length, 2, "multi-trace visibility changes should trigger y-axis autorange");
+
+api.plotPayloads.clear();
+api.renderPlot(data, description, { disableZoom: true, showInterventionMarker: false });
+let staticHandlerCount = 0;
+context.document.getElementById = () => ({
+  on() {
+    staticHandlerCount += 1;
+  },
+});
+api.mountPlots();
+assert.equal(staticHandlerCount, 0, "static homepage plots should not install visibility handlers");
+
 console.log("noise behavior ok");

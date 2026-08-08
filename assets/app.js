@@ -519,6 +519,15 @@ function renderPlot(data, description, options = {}) {
   return `<div class="plot-wrap plotly-wrap"><div id="${plotId}" class="plotly-host" role="img" aria-label="${ariaLabel}"></div></div>`;
 }
 
+function enableYAxisAutorangeOnTraceVisibilityChange(element) {
+  if (typeof element?.on !== "function" || typeof window.Plotly?.relayout !== "function") return;
+  element.on("plotly_restyle", restyleData => {
+    const update = Array.isArray(restyleData) ? restyleData[0] : restyleData;
+    if (!update || !Object.prototype.hasOwnProperty.call(update, "visible")) return;
+    window.Plotly.relayout(element, { "yaxis.autorange": true });
+  });
+}
+
 function mountPlots() {
   if (!plotPayloads.size) return;
   window.requestAnimationFrame(() => {
@@ -530,6 +539,9 @@ function mountPlots() {
         continue;
       }
       window.Plotly.react(element, payload.traces, payload.layout, payload.config);
+      if (payload.config.staticPlot !== true) {
+        enableYAxisAutorangeOnTraceVisibilityChange(element);
+      }
     }
     plotPayloads.clear();
   });
@@ -1087,6 +1099,7 @@ if (window.__TRACEBENCH_ENABLE_TEST_API__) {
     dataWithPlotNoise,
     findPrompt,
     hashString,
+    mountPlots,
     noiseProfile,
     plotPayloads,
     renderPlot,
