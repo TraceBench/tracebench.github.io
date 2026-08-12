@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="900" height="500" viewBox="0 0 900 500"
+     role="img" aria-labelledby="bounceBallTitle bounceBallDescription"
+     shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <title id="bounceBallTitle">BounceBall dynamics schematic</title>
+  <desc id="bounceBallDescription">
+    A damped point mass moves along a slightly inclined one-dimensional rail between
+    two rigid walls. Faded positions show back-and-forth motion, viscous damping
+    opposes velocity, gravity has a component along the rail, and each wall has its
+    own restitution coefficient.
+  </desc>
+
+  <defs>
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="8.6" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#26313D"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8.6" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#5E7FA3"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="500" fill="#FFFFFF"/>
+
+  <!-- The rail, its end walls, and all motion states share one inclination. -->
+  <g transform="rotate(-5 450 300)">
+    <path d="M125 350 H775
+             M125 350 V145 M775 350 V145"
+          fill="none" stroke="#26313D" stroke-width="3.5"
+          stroke-linecap="square" stroke-linejoin="round"/>
+
+    <!-- Small wall hatches keep the rigid boundaries visually light. -->
+    <path d="M125 170 L108 158 M125 205 L108 193 M125 240 L108 228
+             M125 275 L108 263 M125 310 L108 298
+             M775 170 L792 158 M775 205 L792 193 M775 240 L792 228
+             M775 275 L792 263 M775 310 L792 298"
+          fill="none" stroke="#AAB4BF" stroke-width="2.4"
+          stroke-linecap="round"/>
+
+    <!-- Equally timed positions show the mass travelling toward the right wall. -->
+    <circle cx="270" cy="307" r="42" fill="#E4E9EE"
+            stroke="#AAB4BF" stroke-width="2.8" opacity="0.25"/>
+    <circle cx="345" cy="307" r="42" fill="#E4E9EE"
+            stroke="#AAB4BF" stroke-width="2.8" opacity="0.48"/>
+    <circle cx="430" cy="307" r="42" fill="#E4E9EE"
+            stroke="#AAB4BF" stroke-width="2.8" opacity="0.70"/>
+
+    <circle cx="535" cy="307" r="42" fill="#5E7FA3"
+            stroke="#26313D" stroke-width="2.8"/>
+    <text x="535" y="319" fill="#FFFFFF" font-size="34" font-weight="600"
+          font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+          text-anchor="middle">m</text>
+
+    <!-- Velocity along the rail and viscous resistance opposite to it. -->
+    <line x1="590" y1="288" x2="682" y2="288"
+          stroke="#26313D" stroke-width="3.5" stroke-linecap="round"
+          marker-end="url(#arrowDark)"/>
+    <text x="635" y="270" fill="#26313D" font-size="30" font-weight="600"
+          font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+          text-anchor="middle">v</text>
+
+    <path d="M484 275 C459 261 418 261 393 275
+             M484 287 C455 276 422 276 393 287"
+          fill="none" stroke="#AAB4BF" stroke-width="2.2"
+          stroke-linecap="round"/>
+    <line x1="474" y1="254" x2="402" y2="254"
+          stroke="#5E7FA3" stroke-width="3.2" stroke-linecap="round"
+          marker-end="url(#arrowBlue)"/>
+    <text x="438" y="236" fill="#5E7FA3" font-size="30" font-weight="600"
+          font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+          text-anchor="middle">c</text>
+
+    <!-- A compact impact burst denotes the measured right-wall contact force. -->
+    <path d="M706 275 L720 260 M713 290 L735 282 M716 307 H742
+             M713 324 L735 332 M706 339 L720 354"
+          fill="none" stroke="#26313D" stroke-width="3"
+          stroke-linecap="round"/>
+
+    <text x="150" y="125" fill="#26313D" font-size="31" font-weight="600"
+          font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+          text-anchor="middle">e<tspan baseline-shift="sub" font-size="19">L</tspan></text>
+    <text x="750" y="125" fill="#26313D" font-size="31" font-weight="600"
+          font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+          text-anchor="middle">e<tspan baseline-shift="sub" font-size="19">R</tspan></text>
+  </g>
+
+  <!-- Gravity and the resulting downslope component. -->
+  <line x1="450" y1="70" x2="450" y2="182"
+        stroke="#26313D" stroke-width="3.5" stroke-linecap="round"
+        marker-end="url(#arrowDark)"/>
+  <text x="473" y="132" fill="#26313D" font-size="33" font-weight="600"
+        font-family="Helvetica Neue, Arial, sans-serif" font-style="italic">g</text>
+
+  <line x1="425" y1="205" x2="340" y2="213"
+        stroke="#5E7FA3" stroke-width="3.2" stroke-linecap="round"
+        marker-end="url(#arrowBlue)"/>
+  <text x="373" y="190" fill="#5E7FA3" font-size="25" font-weight="600"
+        font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+        text-anchor="middle">g sin θ</text>
+
+  <!-- Inclination is measured from a short horizontal reference. -->
+  <path d="M123 403 H245
+           M148 402 A70 70 0 0 1 217 396"
+        fill="none" stroke="#AAB4BF" stroke-width="2.4"
+        stroke-linecap="round"/>
+  <text x="197" y="388" fill="#5E7FA3" font-size="30" font-weight="600"
+        font-family="Helvetica Neue, Arial, sans-serif" font-style="italic">θ</text>
+
+</svg>

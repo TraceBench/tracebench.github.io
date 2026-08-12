@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="900" height="500" viewBox="0 0 900 500"
+     role="img" aria-labelledby="massSlideTitle massSlideDescription"
+     shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <title id="massSlideTitle">MassSlide dynamics schematic</title>
+  <desc id="massSlideDescription">
+    A block slides along an inclined rigid plane under gravity and a periodic pulsed
+    force. The normal force is perpendicular to the plane, kinetic Coulomb friction
+    opposes motion, and a larger static-friction threshold governs breakaway from rest.
+  </desc>
+
+  <defs>
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="8.6" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#26313D"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8.6" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#5E7FA3"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="500" fill="#FFFFFF"/>
+
+  <!-- Long rigid plane with restrained hatching, matching the BallDrop ground cue. -->
+  <path d="M92 414 L790 160
+           M112 407 L99 390 M144 395 L131 378 M176 383 L163 366
+           M208 371 L195 354 M240 359 L227 342 M272 348 L259 331
+           M304 336 L291 319 M336 324 L323 307 M368 313 L355 296
+           M400 301 L387 284 M432 289 L419 272 M464 278 L451 261
+           M496 266 L483 249 M528 254 L515 237 M560 243 L547 226
+           M592 231 L579 214 M624 219 L611 202 M656 208 L643 191
+           M688 196 L675 179 M720 184 L707 167 M752 173 L739 156"
+        fill="none" stroke="#26313D" stroke-width="3.5"
+        stroke-linecap="square"/>
+
+  <!-- Faded, equally timed blocks show translation constrained to the plane. -->
+  <g transform="rotate(-20 373 297)">
+    <rect x="225" y="250" width="108" height="82" rx="8"
+          fill="#E4E9EE" stroke="#AAB4BF" stroke-width="2.8" opacity="0.25"/>
+    <rect x="292" y="250" width="108" height="82" rx="8"
+          fill="#E4E9EE" stroke="#AAB4BF" stroke-width="2.8" opacity="0.48"/>
+  </g>
+
+  <g transform="rotate(-20 468 262)">
+    <rect x="402" y="211" width="132" height="102" rx="9"
+          fill="#5E7FA3" stroke="#26313D" stroke-width="2.8"/>
+    <text x="497" y="274" fill="#FFFFFF" font-size="34" font-weight="600"
+          font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+          text-anchor="middle">m</text>
+  </g>
+
+  <!-- Periodic pulsed force and velocity act along the plane. -->
+  <line x1="535" y1="208" x2="675" y2="157"
+        stroke="#26313D" stroke-width="3.5" stroke-linecap="round"
+        marker-end="url(#arrowDark)"/>
+  <text x="614" y="161" fill="#26313D" font-size="29" font-weight="600"
+        font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+        text-anchor="middle">F(t)</text>
+
+  <path d="M588 128 H596 V98 H601 V128
+           H641 V98 H646 V128
+           H686 V98 H691 V128 H723"
+        fill="none" stroke="#AAB4BF" stroke-width="2.4"
+        stroke-linecap="square" stroke-linejoin="miter"/>
+
+  <line x1="504" y1="184" x2="579" y2="157"
+        stroke="#5E7FA3" stroke-width="3.2" stroke-linecap="round"
+        marker-end="url(#arrowBlue)"/>
+  <text x="538" y="146" fill="#5E7FA3" font-size="30" font-weight="600"
+        font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+        text-anchor="middle">v</text>
+
+  <!-- Kinetic friction opposes the depicted upslope motion. -->
+  <line x1="397" y1="318" x2="290" y2="357"
+        stroke="#5E7FA3" stroke-width="3.5" stroke-linecap="round"
+        marker-end="url(#arrowBlue)"/>
+  <text x="344" y="382" fill="#5E7FA3" stroke="#FFFFFF" stroke-width="5"
+        paint-order="stroke" stroke-linejoin="round" font-size="29" font-weight="600"
+        font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+        text-anchor="middle">μ<tspan baseline-shift="sub" font-size="18">k</tspan>N</text>
+
+  <!-- Gravity and normal force remain distinct observed mechanics. -->
+  <line x1="465" y1="250" x2="465" y2="388"
+        stroke="#26313D" stroke-width="3.5" stroke-linecap="round"
+        marker-end="url(#arrowDark)"/>
+  <text x="487" y="357" fill="#26313D" font-size="31" font-weight="600"
+        font-family="Helvetica Neue, Arial, sans-serif" font-style="italic">mg</text>
+
+  <line x1="435" y1="240" x2="387" y2="108"
+        stroke="#5E7FA3" stroke-width="3.5" stroke-linecap="round"
+        marker-end="url(#arrowBlue)"/>
+  <text x="385" y="91" fill="#5E7FA3" font-size="31" font-weight="600"
+        font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+        text-anchor="middle">N</text>
+
+  <!-- Breakaway is shown as a compact static-contact cue rather than a text box. -->
+  <g transform="translate(0 28) rotate(-20 760 250)">
+    <path d="M720 250 H800
+             M731 250 L720 266 M754 250 L743 266 M777 250 L766 266"
+          fill="none" stroke="#AAB4BF" stroke-width="2.8"
+          stroke-linecap="square"/>
+    <rect x="744" y="205" width="54" height="45" rx="5"
+          fill="#E4E9EE" stroke="#AAB4BF" stroke-width="2.5"/>
+  </g>
+  <line x1="738" y1="190" x2="704" y2="202"
+        stroke="#5E7FA3" stroke-width="3" stroke-linecap="round"
+        marker-end="url(#arrowBlue)"/>
+  <text x="780" y="203" fill="#5E7FA3" stroke="#FFFFFF" stroke-width="5"
+        paint-order="stroke" stroke-linejoin="round" font-size="27" font-weight="600"
+        font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+        text-anchor="middle">μ<tspan baseline-shift="sub" font-size="17">s</tspan>N</text>
+
+  <!-- Inclination measured against a compact horizontal reference. -->
+  <path d="M92 414 H255
+           M154 414 A64 64 0 0 1 214 392"
+        fill="none" stroke="#AAB4BF" stroke-width="2.4"
+        stroke-linecap="round"/>
+  <text x="197" y="411" fill="#5E7FA3" font-size="30" font-weight="600"
+        font-family="Helvetica Neue, Arial, sans-serif" font-style="italic">θ</text>
+</svg>

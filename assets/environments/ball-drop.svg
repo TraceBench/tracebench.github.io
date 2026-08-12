@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="900" height="500" viewBox="0 0 900 500"
+     role="img" aria-labelledby="ballDropTitle ballDropDescription"
+     shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <title id="ballDropTitle">BallDrop dynamics schematic</title>
+  <desc id="ballDropDescription">
+    One physical scene shows a ball of mass m falling and rising above a ground contact.
+    Gravity g acts downward, quadratic drag with coefficient k opposes each direction
+    of motion, equally sized faded ball positions indicate velocity direction, their
+    increasing separation indicates increasing speed, and restitution r governs the
+    central ground impact.
+  </desc>
+
+  <defs>
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="8.6" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#26313D"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="500" fill="#FFFFFF"/>
+
+  <!-- Compact ground contact; deliberately not drawn as a full-width axis -->
+  <path d="M360 420 H540
+           M382 420 L370 434 M410 420 L398 434
+           M490 420 L478 434 M518 420 L506 434"
+        fill="none" stroke="#26313D" stroke-width="3.5"
+        stroke-linecap="square"/>
+
+  <!-- Shared gravitational acceleration -->
+  <line x1="450" y1="85" x2="450" y2="256"
+        stroke="#26313D" stroke-width="3.5" stroke-linecap="round"
+        marker-end="url(#arrowDark)"/>
+  <text x="473" y="180" fill="#26313D" font-size="33" font-weight="600"
+        font-family="Helvetica Neue, Arial, sans-serif" font-style="italic">g</text>
+
+  <!-- Falling free-flight state -->
+  <g>
+    <!-- Previous equally timed positions: increasing gaps show downward acceleration. -->
+    <circle cx="260" cy="55" r="42" fill="#E4E9EE"
+            stroke="#AAB4BF" stroke-width="2.8" opacity="0.25"/>
+    <circle cx="260" cy="95" r="42" fill="#E4E9EE"
+            stroke="#AAB4BF" stroke-width="2.8" opacity="0.48"/>
+    <circle cx="260" cy="140" r="42" fill="#E4E9EE"
+            stroke="#AAB4BF" stroke-width="2.8" opacity="0.70"/>
+
+    <!-- Airflow streamlines and their quadratic-drag coefficient -->
+    <path d="M210 126 C192 160 192 258 210 292
+             M232 126 C220 162 220 256 232 292
+             M288 126 C300 162 300 256 288 292
+             M310 126 C328 160 328 258 310 292"
+          fill="none" stroke="#AAB4BF" stroke-width="2.2"
+          stroke-linecap="round"/>
+    <text x="170" y="222" fill="#5E7FA3" font-size="33" font-weight="600"
+          font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+          text-anchor="middle">k</text>
+
+    <circle cx="260" cy="210" r="42" fill="#5E7FA3"
+            stroke="#26313D" stroke-width="2.8"/>
+    <text x="260" y="222" fill="#FFFFFF" font-size="34" font-weight="600"
+          font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+          text-anchor="middle">m</text>
+
+  </g>
+
+  <!-- Ground impact and restitution -->
+  <g>
+    <ellipse cx="450" cy="410" rx="45" ry="14" fill="#5E7FA3"
+             stroke="#26313D" stroke-width="2.8"/>
+    <path d="M410 385 L395 368 M429 377 L422 353 M450 374 L450 347
+             M471 377 L478 353 M490 385 L505 368"
+          fill="none" stroke="#26313D" stroke-width="3"
+          stroke-linecap="round"/>
+    <text x="450" y="329" fill="#26313D" font-size="34" font-weight="600"
+          font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+          text-anchor="middle">r</text>
+  </g>
+
+  <!-- Rising free-flight state -->
+  <g>
+    <!-- Previous equally timed positions: increasing gaps show upward speed. -->
+    <circle cx="640" cy="285" r="42" fill="#E4E9EE"
+            stroke="#AAB4BF" stroke-width="2.8" opacity="0.70"/>
+    <circle cx="640" cy="335" r="42" fill="#E4E9EE"
+            stroke="#AAB4BF" stroke-width="2.8" opacity="0.48"/>
+    <circle cx="640" cy="375" r="42" fill="#E4E9EE"
+            stroke="#AAB4BF" stroke-width="2.8" opacity="0.25"/>
+
+    <!-- Airflow streamlines and their quadratic-drag coefficient -->
+    <path d="M590 126 C572 160 572 258 590 292
+             M612 126 C600 162 600 256 612 292
+             M668 126 C680 162 680 256 668 292
+             M690 126 C708 160 708 258 690 292"
+          fill="none" stroke="#AAB4BF" stroke-width="2.2"
+          stroke-linecap="round"/>
+    <text x="730" y="222" fill="#5E7FA3" font-size="33" font-weight="600"
+          font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+          text-anchor="middle">k</text>
+
+    <circle cx="640" cy="210" r="42" fill="#5E7FA3"
+            stroke="#26313D" stroke-width="2.8"/>
+    <text x="640" y="222" fill="#FFFFFF" font-size="34" font-weight="600"
+          font-family="Helvetica Neue, Arial, sans-serif" font-style="italic"
+          text-anchor="middle">m</text>
+
+  </g>
+</svg>

@@ -37,6 +37,31 @@ vm.runInNewContext(source, context, { filename: "assets/app.js" });
 const api = context.window.__TRACEBENCH_TEST__;
 assert.ok(api, "app.js should expose test helpers");
 
+const environmentArtwork = [
+  ["BallDrop", "ball-drop", "BallDrop dynamics schematic from the TraceBench paper."],
+  ["BounceBall", "bounce-ball", "BounceBall dynamics schematic from the TraceBench paper."],
+  ["MassSlide", "mass-slide", "MassSlide dynamics schematic from the TraceBench paper."],
+];
+for (const [environmentId, assetName, alt] of environmentArtwork) {
+  const markup = api.environmentCardMarkup({
+    environment_id: environmentId,
+    name: environmentId,
+    short_one_line_description: `${environmentId} description`,
+  });
+  assert.ok(
+    markup.includes(`src="/assets/environments/${assetName}.svg"`),
+    `${environmentId} card should render its paper schematic`
+  );
+  assert.ok(markup.includes(`alt="${alt}"`), `${environmentId} schematic should have descriptive alt text`);
+}
+
+const unknownEnvironmentMarkup = api.environmentCardMarkup({
+  environment_id: "FutureEnvironment",
+  name: "FutureEnvironment",
+  short_one_line_description: "Future description",
+});
+assert.ok(!unknownEnvironmentMarkup.includes("env-card-artwork"), "unknown environments should render without broken artwork");
+
 const description = {
   observed_channels: [
     { id: "x", label: "x" },

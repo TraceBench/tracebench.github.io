@@ -25,6 +25,20 @@ const PLOT_NOISE_PROFILES = {
   Low: { adaptive: 0.002 },
   High: { adaptive: 0.008 },
 };
+const ENVIRONMENT_CARD_ARTWORK = {
+  BallDrop: {
+    src: "/assets/environments/ball-drop.svg",
+    alt: "BallDrop dynamics schematic from the TraceBench paper.",
+  },
+  BounceBall: {
+    src: "/assets/environments/bounce-ball.svg",
+    alt: "BounceBall dynamics schematic from the TraceBench paper.",
+  },
+  MassSlide: {
+    src: "/assets/environments/mass-slide.svg",
+    alt: "MassSlide dynamics schematic from the TraceBench paper.",
+  },
+};
 
 const state = {
   site: null,
@@ -876,6 +890,19 @@ async function renderResultDetail(submissionId) {
   commit(content);
 }
 
+function environmentCardMarkup(desc) {
+  const environmentId = desc.environment_id || desc.sourceName || desc.name;
+  const artwork = ENVIRONMENT_CARD_ARTWORK[environmentId];
+  const artworkMarkup = artwork
+    ? `<img class="env-card-artwork" src="${escapeHtml(artwork.src)}" alt="${escapeHtml(artwork.alt)}">`
+    : "";
+  return `<a class="env-card" href="/environments/${escapeHtml(environmentId)}/" data-link>
+    <div><strong>${escapeHtml(desc.name)}</strong><p>${escapeHtml(desc.short_one_line_description)}</p></div>
+    ${artworkMarkup}
+    <span>Open environment</span>
+  </a>`;
+}
+
 async function renderEnvironments() {
   const descriptions = await Promise.all(state.summary.simulators.map(id => getEnvironmentDescription(id)));
   const content = `
@@ -883,12 +910,7 @@ async function renderEnvironments() {
       <h1 class="page-title">Environments</h1>
       <p class="page-subtitle">Each simulator exposes browser-ready metadata, plotted samples, prompt variants, and benchmark download links.</p>
       <div class="card-grid">
-        ${descriptions.map(desc => {
-          const environmentId = desc.environment_id || desc.sourceName || desc.name;
-          return `<a class="env-card" href="/environments/${escapeHtml(environmentId)}/" data-link>
-          <div><strong>${escapeHtml(desc.name)}</strong><p>${escapeHtml(desc.short_one_line_description)}</p></div><span>Open environment</span>
-        </a>`;
-        }).join("")}
+        ${descriptions.map(environmentCardMarkup).join("")}
       </div>
     </section>
   `;
@@ -1097,6 +1119,7 @@ if (window.__TRACEBENCH_ENABLE_TEST_API__) {
   window.__TRACEBENCH_TEST__ = {
     applyAdaptiveAndBaseNoise,
     dataWithPlotNoise,
+    environmentCardMarkup,
     findPrompt,
     hashString,
     mountPlots,
