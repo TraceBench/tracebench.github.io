@@ -65,6 +65,20 @@ button, select { font: inherit; }
   border-bottom: 1px solid transparent;
   padding-bottom: 2px;
 }
+.nav-links a.external {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 4px;
+  white-space: nowrap;
+}
+.nav-brand-icon {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+}
+.nav-brand-icon-hugging-face {
+  width: 16px;
+}
 .nav-links a.active,
 .nav-links a:hover {
   color: var(--blue);
@@ -74,8 +88,7 @@ button, select { font: inherit; }
 .nav-links a.external::after {
   content: "↗";
   font-size: 10px;
-  margin-left: 3px;
-  vertical-align: 0.08em;
+  line-height: 1;
   color: var(--muted);
 }
 

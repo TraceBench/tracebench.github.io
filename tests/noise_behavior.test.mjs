@@ -20,6 +20,7 @@ context.window = {
   __TRACEBENCH_DISABLE_AUTORUN__: true,
   __TRACEBENCH_ENABLE_TEST_API__: true,
   addEventListener() {},
+  location: { pathname: "/results/", search: "" },
   requestAnimationFrame(callback) {
     callback();
   },
@@ -36,6 +37,35 @@ vm.runInNewContext(source, context, { filename: "assets/app.js" });
 
 const api = context.window.__TRACEBENCH_TEST__;
 assert.ok(api, "app.js should expose test helpers");
+
+api.state.site = {
+  paper_url: "https://arxiv.org",
+  code_url: "https://github.com/TommasoBendinelli/TraceBench",
+  hf_dataset_url: "https://huggingface.co/datasets/eth-siplab/tracebench",
+};
+const shellMarkup = api.shell("<p>content</p>");
+assert.ok(!shellMarkup.includes("Paper (arXiv)"), "paper link should omit the arXiv qualifier");
+assert.ok(
+  shellMarkup.includes('href="https://arxiv.org" target="_blank" rel="noreferrer">Paper</a>'),
+  "paper link should retain its destination and external-link behavior"
+);
+assert.ok(shellMarkup.includes('data-brand="github"'), "code link should display the GitHub mark");
+assert.ok(shellMarkup.includes('data-brand="hugging-face"'), "dataset link should display the Hugging Face mark");
+assert.ok(
+  shellMarkup.includes('data-brand="github" viewBox="0 0 16 16" aria-hidden="true" focusable="false"'),
+  "GitHub mark should be decorative"
+);
+assert.ok(
+  shellMarkup.includes('data-brand="hugging-face" viewBox="0 0 95 88" aria-hidden="true" focusable="false"'),
+  "Hugging Face mark should be decorative"
+);
+assert.ok(shellMarkup.includes("<span>Code</span>"), "code link should retain its accessible text label");
+assert.ok(shellMarkup.includes("<span>Hugging Face</span>"), "dataset link should use the official two-word label");
+assert.ok(
+  shellMarkup.indexOf(">Paper</a>") < shellMarkup.indexOf("<span>Code</span>")
+    && shellMarkup.indexOf("<span>Code</span>") < shellMarkup.indexOf("<span>Hugging Face</span>"),
+  "external links should retain Paper, Code, Hugging Face order"
+);
 
 const environmentArtwork = [
   ["BallDrop", "ball-drop", "BallDrop dynamics schematic from the TraceBench paper."],
