@@ -837,10 +837,6 @@ async function renderResultDetail(submissionId) {
   const activeCondition = detail.condition_results.find(item => scopeEquals(item.scope, state.results.scope));
   const filteredSeeds = detail.per_seed_results.filter(item => scopeEquals(item.scope, state.results.scope));
   const complete = detail.seed_coverage.public_cells_complete;
-  const conditionRows = detail.condition_results
-    .filter(item => item.scope.task_mode === state.results.scope.task_mode)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 12);
   const content = `
     <section>
       <div class="detail-header">
@@ -868,21 +864,6 @@ async function renderResultDetail(submissionId) {
           <p>${complete ? `<span class="badge ok">complete public cell</span>` : `<span class="badge warn">incomplete</span>`} All displayed public cells contain exactly five distinct required seeds for each simulator.</p>
         </div>
         <div>${Object.entries(detail.seed_coverage.distinct_required_seeds).map(([sim, seeds]) => `<span class="badge ok">${escapeHtml(sim)}: ${seeds.length} seeds</span>`).join("")}</div>
-      </section>
-
-      <section class="section">
-        <div class="section-header">
-          <h2>Per-condition results</h2>
-          <p class="muted">Rows below show condition-level scores for this submission within the selected task mode.</p>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>task mode</th><th>noise</th><th>context</th><th>examples</th><th>score</th><th>seeds</th></tr></thead>
-            <tbody>${conditionRows.map(item => `<tr>
-              <td>${escapeHtml(item.scope.task_mode)}</td><td>${escapeHtml(item.scope.noise)}</td><td>${escapeHtml(item.scope.context)}</td><td>${escapeHtml(item.scope.examples)}</td><td class="score-cell">${formatScore(item.score)}</td><td>${item.distinct_seed_count}</td>
-            </tr>`).join("")}</tbody>
-          </table>
-        </div>
       </section>
 
       <section class="section">
