@@ -16,9 +16,9 @@ const CONTEXT_OPTIONS = [
 ];
 const EXAMPLE_OPTIONS = [
   { value: "None", label: "NO EXAMPLES" },
-  { value: "One Example", label: "ONE EXAMPLE" },
   { value: "Three Examples", label: "MULTIPLE EXAMPLES" },
 ];
+const EXAMPLE_VALUES = EXAMPLE_OPTIONS.map(option => option.value);
 const NOISE_RULES = { rollingWindowPoints: 11, sigmaFloorRatio: 0.0001 };
 const PLOT_NOISE_PROFILES = {
   None: { adaptive: 0.0 },
@@ -343,14 +343,20 @@ function leaderboardRows() {
 }
 
 function leaderboardFilters() {
-  if (state.leaderboard?.filters) return state.leaderboard.filters;
+  if (state.leaderboard?.filters) {
+    return {
+      ...state.leaderboard.filters,
+      examples: (state.leaderboard.filters.examples || EXAMPLE_VALUES).filter(value => EXAMPLE_VALUES.includes(value)),
+    };
+  }
   const rows = leaderboardRows();
   const values = key => [...new Set(rows.map(row => row.scope[key]))].filter(Boolean);
+  const examples = values("examples").filter(value => EXAMPLE_VALUES.includes(value));
   return {
     task_mode: values("task_mode").length ? values("task_mode") : ["Code", "Direct"],
     noise: values("noise").length ? values("noise") : ["Low", "High"],
     context: values("context").length ? values("context") : ["High", "None"],
-    examples: values("examples").length ? values("examples") : ["None", "One Example", "Three Examples"],
+    examples: examples.length ? examples : EXAMPLE_VALUES,
   };
 }
 
