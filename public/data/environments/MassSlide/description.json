@@ -100,5 +100,6 @@
     }
   ],
   "sample_count": 5,
-  "short_one_line_description": "A mass slides under force while friction and velocity are observed over time."
+  "short_one_line_description": "A mass slides under force while friction and velocity are observed over time.",
+  "system_description": "This model simulates a block of mass m moving along an infinitely long rigid plane inclined at an angle theta under gravitational acceleration g and Coulomb friction.\nThe coordinate axis is aligned with the plane. \nThe block is also subject to an externally applied periodic force along the plane.\nThe friction force acts along the plane and opposes motion.\nWhen the block is moving, that is, when v(t) is nonzero, friction is modeled as kinetic Coulomb friction.\nA breakaway static-friction threshold is also modeled: when the block is at rest, motion starts only if the net driving force along the plane exceeds a breakaway limit.\n\nObserved Signals:\ncol1: velocity of the mass along the plane\ncol2: friction force\ncol3: normal force\ncol4: time"
 }

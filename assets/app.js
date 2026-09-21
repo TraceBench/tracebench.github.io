@@ -56,7 +56,7 @@ const state = {
     sortKey: "score",
     sortDir: "desc"
   },
-  env: { taskMode: "Code", noise: "Low", context: "High", examples: "Three Examples", sampleIndex: {} }
+  env: { taskMode: "Code", noise: "Low", context: "High", examples: "Three Examples", sampleIndex: {}, promptOpen: {} }
 };
 
 const app = document.getElementById("app");
@@ -952,13 +952,26 @@ async function renderEnvironmentDetail(environmentId) {
       <h1 class="page-title">${escapeHtml(description.name)}</h1>
       <p class="page-subtitle">${escapeHtml(description.short_one_line_description)}</p>
       <div class="panel">
-        ${taskControls("env", state.env, sampleControls)}
+        <div class="control-row">
+          <span class="control-label">Noise:</span>
+          ${optionButtons("env", "noise", state.env.noise, NOISE_OPTIONS)}
+          ${sampleControls}
+        </div>
         ${plotNoiseCue(state.env)}
         ${renderPlot(plotData, description)}
       </div>
       <div class="prompt-panel">
-        <h2>Agent prompt</h2>
-        <pre>${escapeHtml(prompt.agent_instruction)}</pre>
+        <h2>System Description</h2>
+        <pre>${escapeHtml(description.system_description)}</pre>
+        <button class="toggle-button" data-action="toggle-env-prompt" data-environment="${escapeHtml(environmentId)}" aria-expanded="${Boolean(state.env.promptOpen[environmentId])}" aria-controls="environment-agent-prompt">${state.env.promptOpen[environmentId] ? "Hide full agent prompt" : "Show full agent prompt"}</button>
+        <div id="environment-agent-prompt" ${state.env.promptOpen[environmentId] ? "" : "hidden"}>
+          <div class="control-stack">
+            <div class="control-row"><span class="control-label">Task:</span>${optionButtons("env", "taskMode", state.env.taskMode, TASK_MODE_OPTIONS)}</div>
+            <div class="control-row"><span class="control-label">Context:</span>${optionButtons("env", "context", state.env.context, CONTEXT_OPTIONS)}</div>
+            <div class="control-row"><span class="control-label">Examples:</span>${optionButtons("env", "examples", state.env.examples, EXAMPLE_OPTIONS)}</div>
+          </div>
+          <pre>${escapeHtml(prompt.agent_instruction)}</pre>
+        </div>
       </div>
       <section class="section">
         <div class="section-header"><h2>Simulator details</h2></div>
@@ -1182,6 +1195,10 @@ document.addEventListener("click", event => {
       state.results.sortKey = key;
       state.results.sortDir = key === "score" || key === "rank" ? "desc" : "asc";
     }
+    render();
+  } else if (action === "toggle-env-prompt") {
+    const environmentId = button.dataset.environment;
+    state.env.promptOpen[environmentId] = !state.env.promptOpen[environmentId];
     render();
   } else if (action === "set-env-control") {
     const key = button.dataset.key;

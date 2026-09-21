@@ -381,7 +381,7 @@ class WebsitePromptRenderingTest(unittest.TestCase):
         sync_hf_to_website_data.SIMULATORS = ("BallDrop",)
         sync_hf_to_website_data.download_file = fake_download_file
         sync_hf_to_website_data.load_prompt_renderer = lambda tracebench_root: (
-            lambda question_text, **kwargs: f"full::{kwargs['question_slug']}::{question_text['sample_source']}"
+            lambda question_text, **kwargs: f"full::{kwargs['question_slug']}::{question_text['sample_source']} by simulating a test system.\nObserved Signals:\ncol1: position\ncol2: velocity\ncol3: force\ncol4: time"
         )
         try:
             with tempfile.TemporaryDirectory() as tmp:
@@ -398,6 +398,7 @@ class WebsitePromptRenderingTest(unittest.TestCase):
             sync_hf_to_website_data.download_file = original_download_file
             sync_hf_to_website_data.load_prompt_renderer = original_load_prompt_renderer
 
+        self.assertEqual(description["system_description"], "This model simulates a test system.\nObserved Signals:\ncol1: position\ncol2: velocity\ncol3: force\ncol4: time")
         self.assertEqual(homepage_data["source"], "programmatic:ball-drop-bounce-gif")
         self.assertTrue(homepage_data["rows"])
         combinations = description["prompt_combinations"]
@@ -405,7 +406,7 @@ class WebsitePromptRenderingTest(unittest.TestCase):
         self.assertNotEqual(combinations[0]["agent_instruction"], "stale deployed prompt")
         self.assertEqual(
             combinations[0]["agent_instruction"],
-            "full::high-direct-0::prompt source high-direct-0",
+            "full::high-direct-0::prompt source high-direct-0 by simulating a test system.\nObserved Signals:\ncol1: position\ncol2: velocity\ncol3: force\ncol4: time",
         )
         homepage_combinations = description["homepage_prompt_combinations"]
         self.assertEqual(len(homepage_combinations), 12)

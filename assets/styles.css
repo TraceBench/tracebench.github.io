@@ -569,3 +569,6 @@ tbody tr:last-child td { border-bottom: 0; }
   th, td { padding: 10px 8px; }
   .meta-grid { grid-template-columns: 1fr; }
 }
+
+.prompt-panel [data-action="toggle-env-prompt"] { margin-top: 20px; }
+#environment-agent-prompt { margin-top: 16px; }

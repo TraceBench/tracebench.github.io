@@ -793,6 +793,17 @@ def rendered_homepage_prompt_combinations(questions_path: Path) -> list[dict[str
     return combinations
 
 
+def system_description_from_prompts(combinations: list[dict[str, str]]) -> str:
+    """Keep the high-context simulator prose and observed columns verbatim."""
+    for prompt in combinations:
+        if prompt.get("desc_level") != "high":
+            continue
+        match = re.search(r"by simulating (.*?^col4: time[ \t]*$)", prompt["agent_instruction"], re.DOTALL | re.MULTILINE)
+        if match:
+            return "This model simulates " + match.group(1).rstrip()
+    raise RuntimeError("High-context prompt lacks a simulator description ending in col4: time")
+
+
 def sync_from_hf(repo: str, revision: str, output_dir: Path, tracebench_root: Path | None) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     prompt_renderer = load_prompt_renderer(tracebench_root)
@@ -815,6 +826,7 @@ def sync_from_hf(repo: str, revision: str, output_dir: Path, tracebench_root: Pa
             if not isinstance(description, dict):
                 raise RuntimeError(f"{description_path} must contain a JSON object")
             description["prompt_combinations"] = rendered_prompt_combinations(questions_path, prompt_renderer)
+            description["system_description"] = system_description_from_prompts(description["prompt_combinations"])
             if simulator == "BallDrop":
                 description["homepage_prompt_combinations"] = rendered_homepage_prompt_combinations(questions_path)
             else:

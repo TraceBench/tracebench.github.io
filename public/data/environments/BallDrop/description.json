@@ -174,5 +174,6 @@
     }
   ],
   "sample_count": 5,
-  "short_one_line_description": "A ball is dropped from a height and observed over time."
+  "short_one_line_description": "A ball is dropped from a height and observed over time.",
+  "system_description": "This model simulates a 1D vertical point-mass ball model under gravity.\nWhile the ball is above the ground, its motion is governed by gravity and quadratic air drag acting opposite the direction of travel, and the position evolves according to the current velocity.\nGround interaction is modeled with a restitution-based hard-stop law.\nWhen the ball reaches the ground with impact speed at or above 0.5 m/s, the impact is treated as instantaneous and the post-impact speed is set by the coefficient of restitution e in [0,1].\nThe rebound points upward and its magnitude equals e times the pre-impact speed.\nWhen the impact speed is below the threshold, the ball does not rebound and instead enters static contact at the ground.\n\nObserved Signals:\ncol1: ball height\ncol2: ball velocity\ncol3: contact impulse (N*s)\ncol4: time"
 }

@@ -101,5 +101,6 @@
     }
   ],
   "sample_count": 5,
-  "short_one_line_description": "A bouncing ball trajectory with impacts, velocity changes, and contact impulses."
+  "short_one_line_description": "A bouncing ball trajectory with impacts, velocity changes, and contact impulses.",
+  "system_description": "This model simulates a damped mass moving along a one-dimensional rail between two rigid walls located at positions x_L and x_R.\nThe rail may be tilted by a fixed inclination angle. \nWhen the mass is not in contact with either wall, its motion along the rail is governed by viscous drag, proportional to velocity and opposite the direction of motion, and, when the inclination angle is nonzero, by the component of gravity along the rail.\nWhen the mass hits a wall, the collision is modeled as an instantaneous impact: the direction of motion reverses and the post-impact speed is reduced according to that walls's restitution coefficient.\n\nObserved Signals:\ncol1: mass position along the rail\ncol2: mass velocity along the rail\ncol3: force on the right wall\ncol4: time"
 }
