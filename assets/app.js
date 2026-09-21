@@ -957,7 +957,6 @@ async function renderEnvironmentDetail(environmentId) {
           ${optionButtons("env", "noise", state.env.noise, NOISE_OPTIONS)}
           ${sampleControls}
         </div>
-        ${plotNoiseCue(state.env)}
         ${renderPlot(plotData, description)}
       </div>
       <div class="prompt-panel">

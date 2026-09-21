@@ -5,7 +5,7 @@ import vm from "node:vm";
 const source = fs.readFileSync("assets/app.js", "utf8");
 assert.ok(!source.includes("click signals to inspect traces"), "homepage should not render the signal-inspection helper text");
 assert.ok(!source.includes("plotNoiseCue(state.home)"), "homepage should not render a separate plot-noise cue");
-assert.ok(source.includes("plotNoiseCue(state.env)"), "environment pages should keep the plot-noise cue");
+assert.ok(!source.includes("plotNoiseCue(state.env)"), "environment pages should not repeat the selected noise below the controls");
 assert.ok(!source.includes("<h2 id=\"stats-title\">Statistic row</h2>"), "homepage should not render a visible Statistic row heading");
 
 const context = {
