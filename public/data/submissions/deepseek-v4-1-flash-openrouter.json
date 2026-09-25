@@ -1896,7 +1896,6 @@
       "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
     }
   ],
-  "scoring_note": "Interim release: six conditions have full five-seed coverage for all three simulators and are ranked. Two high-noise, no-context conditions have partial coverage and no leaderboard score.",
   "seed_coverage": {
     "complete_condition_count": 6,
     "partial_condition_count": 2,
