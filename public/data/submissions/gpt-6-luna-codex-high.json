@@ -1971,7 +1971,7 @@
       "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
     }
   ],
-  "scoring_note": "One BounceBall run had a single unmatched output filename. Its nine matching predictions were scored normally; the missing sample received zero. Original output and adjustment are in the archive.",
+  "scoring_note": "One BounceBall run had a single unmatched output filename. Its nine matching predictions were scored normally; the missing sample received zero. Original output and adjustment are in the archive. Two trajectories retain their message and tool steps but have unavailable token usage counters after the standard exporter rejected inconsistent source counters.",
   "seed_coverage": {
     "distinct_required_seeds": {
       "BallDrop": [
