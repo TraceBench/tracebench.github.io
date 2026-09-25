@@ -1,0 +1,2004 @@
+{
+  "agent": "GPT-6 Luna",
+  "archive_contract": {
+    "contains_artifacts": true,
+    "contains_raw_scores": true,
+    "contains_raw_trajectories": true,
+    "run_count": 120,
+    "schema_version": 1
+  },
+  "canonical_score": 0.673,
+  "condition_results": [
+    {
+      "complete": true,
+      "distinct_seed_count": 15,
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.46,
+      "seeds_by_simulator": {
+        "BallDrop": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "BounceBall": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MassSlide": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "complete": true,
+      "distinct_seed_count": 15,
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.573,
+      "seeds_by_simulator": {
+        "BallDrop": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "BounceBall": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MassSlide": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "complete": true,
+      "distinct_seed_count": 15,
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.313,
+      "seeds_by_simulator": {
+        "BallDrop": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "BounceBall": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MassSlide": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "complete": true,
+      "distinct_seed_count": 15,
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.673,
+      "seeds_by_simulator": {
+        "BallDrop": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "BounceBall": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MassSlide": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "complete": true,
+      "distinct_seed_count": 15,
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.633,
+      "seeds_by_simulator": {
+        "BallDrop": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "BounceBall": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MassSlide": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "complete": true,
+      "distinct_seed_count": 15,
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.507,
+      "seeds_by_simulator": {
+        "BallDrop": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "BounceBall": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MassSlide": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "complete": true,
+      "distinct_seed_count": 15,
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.353,
+      "seeds_by_simulator": {
+        "BallDrop": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "BounceBall": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MassSlide": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "complete": true,
+      "distinct_seed_count": 15,
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.673,
+      "seeds_by_simulator": {
+        "BallDrop": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "BounceBall": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MassSlide": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    }
+  ],
+  "date": "2026-09-25",
+  "downloads": {
+    "benchmark_dataset": "https://huggingface.co/datasets/eth-siplab/tracebench",
+    "complete_results_table": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+    "trajectory_archive": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+  },
+  "model": "gpt-6-luna",
+  "per_seed_results": [
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-orbit_0",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.3,
+      "seed": 0,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-orbit_1",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.6,
+      "seed": 1,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-orbit_2",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 2,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-orbit_3",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.4,
+      "seed": 3,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-orbit_4",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 4,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-orbit_0",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.1,
+      "seed": 0,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-orbit_1",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.3,
+      "seed": 1,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-orbit_2",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.2,
+      "seed": 2,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-orbit_3",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.1,
+      "seed": 3,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-orbit_4",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.3,
+      "seed": 4,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-orbit_0",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.6,
+      "seed": 0,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-orbit_1",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.7,
+      "seed": 1,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-orbit_2",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.6,
+      "seed": 2,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-orbit_3",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.6,
+      "seed": 3,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-orbit_4",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.5,
+      "seed": 4,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-orbit_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.7,
+      "seed": 0,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-orbit_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.3,
+      "seed": 1,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-orbit_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.7,
+      "seed": 2,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-orbit_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.9,
+      "seed": 3,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-orbit_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.6,
+      "seed": 4,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-orbit_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.4,
+      "seed": 0,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-orbit_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.0,
+      "seed": 1,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-orbit_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.5,
+      "seed": 2,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-orbit_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.7,
+      "seed": 3,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-orbit_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.5,
+      "seed": 4,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-orbit_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.4,
+      "seed": 0,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-orbit_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 1,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-orbit_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.5,
+      "seed": 2,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-orbit_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 3,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-orbit_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 4,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-tide_0",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.0,
+      "seed": 0,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-tide_1",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.3,
+      "seed": 1,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-tide_2",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.1,
+      "seed": 2,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-tide_3",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.3,
+      "seed": 3,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-tide_4",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.1,
+      "seed": 4,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-tide_0",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.2,
+      "seed": 0,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-tide_1",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.3,
+      "seed": 1,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-tide_2",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.4,
+      "seed": 2,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-tide_3",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.2,
+      "seed": 3,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-tide_4",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.3,
+      "seed": 4,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-tide_0",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.6,
+      "seed": 0,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-tide_1",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.4,
+      "seed": 1,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-tide_2",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.4,
+      "seed": 2,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-tide_3",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.4,
+      "seed": 3,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-tide_4",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.7,
+      "seed": 4,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-flame_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.5,
+      "seed": 0,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-flame_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.5,
+      "seed": 1,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-flame_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 2,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-flame_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 3,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-flame_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.3,
+      "seed": 4,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-flame_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.7,
+      "seed": 0,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-flame_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.6,
+      "seed": 1,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-flame_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.6,
+      "seed": 2,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-flame_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.2,
+      "seed": 3,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-flame_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 4,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-flame_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 0,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-flame_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 1,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-flame_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 2,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-flame_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.7,
+      "seed": 3,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-flame_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 4,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-pine_0",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.6,
+      "seed": 0,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-pine_1",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.6,
+      "seed": 1,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-pine_2",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.3,
+      "seed": 2,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-pine_3",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.7,
+      "seed": 3,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-pine_4",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.4,
+      "seed": 4,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-pine_0",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.5,
+      "seed": 0,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-pine_1",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.8,
+      "seed": 1,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-pine_2",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.6,
+      "seed": 2,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-pine_3",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.8,
+      "seed": 3,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-pine_4",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.6,
+      "seed": 4,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-pine_0",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.7,
+      "seed": 0,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-pine_1",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 1,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-pine_2",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.6,
+      "seed": 2,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-pine_3",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.5,
+      "seed": 3,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "frost_01234-pine_4",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.8,
+      "seed": 4,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-pine_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.3,
+      "seed": 0,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-pine_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.4,
+      "seed": 1,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-pine_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.4,
+      "seed": 2,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-pine_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.7,
+      "seed": 3,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-pine_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.3,
+      "seed": 4,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-pine_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.2,
+      "seed": 0,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-pine_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.5,
+      "seed": 1,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-pine_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.7,
+      "seed": 2,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-pine_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.4,
+      "seed": 3,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-pine_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.7,
+      "seed": 4,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-pine_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.6,
+      "seed": 0,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-pine_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.5,
+      "seed": 1,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-pine_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.8,
+      "seed": 2,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-pine_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.6,
+      "seed": 3,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-pine_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.5,
+      "seed": 4,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-harbor_0",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.3,
+      "seed": 0,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-harbor_1",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.4,
+      "seed": 1,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-harbor_2",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.2,
+      "seed": 2,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-harbor_3",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.4,
+      "seed": 3,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-harbor_4",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.2,
+      "seed": 4,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-harbor_0",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.1,
+      "seed": 0,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-harbor_1",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.1,
+      "seed": 1,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-harbor_2",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.3,
+      "seed": 2,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-harbor_3",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.3,
+      "seed": 3,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-harbor_4",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.6,
+      "seed": 4,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-harbor_0",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.8,
+      "seed": 0,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-harbor_1",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.3,
+      "seed": 1,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-harbor_2",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.4,
+      "seed": 2,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-harbor_3",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.2,
+      "seed": 3,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-harbor_4",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.7,
+      "seed": 4,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-cloud_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.7,
+      "seed": 0,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-cloud_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.7,
+      "seed": 1,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-cloud_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.7,
+      "seed": 2,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-cloud_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.7,
+      "seed": 3,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-cloud_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.7,
+      "seed": 4,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-cloud_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.6,
+      "seed": 0,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-cloud_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.8,
+      "seed": 1,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-cloud_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.6,
+      "seed": 2,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-cloud_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.3,
+      "seed": 3,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-cloud_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 4,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-cloud_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.8,
+      "seed": 0,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-cloud_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.5,
+      "seed": 1,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-cloud_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.7,
+      "seed": 2,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-cloud_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.8,
+      "seed": 3,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+      "question_id": "gentle_01234-cloud_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.5,
+      "seed": 4,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+    }
+  ],
+  "scoring_note": "One BounceBall run had a single unmatched output filename. Its nine matching predictions were scored normally; the missing sample received zero. Original output and adjustment are in the archive.",
+  "seed_coverage": {
+    "distinct_required_seeds": {
+      "BallDrop": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "BounceBall": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "MassSlide": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "public_cells_complete": true,
+    "required_seeds_per_simulator": 5
+  },
+  "submission_id": "gpt-6-luna-codex-high",
+  "submitter": "TraceBench"
+}

@@ -842,7 +842,7 @@ async function renderResultDetail(submissionId) {
   replaceScopeSearch();
   const activeCondition = detail.condition_results.find(item => scopeEquals(item.scope, state.results.scope));
   const filteredSeeds = detail.per_seed_results.filter(item => scopeEquals(item.scope, state.results.scope));
-  const complete = detail.seed_coverage.public_cells_complete;
+  const complete = activeCondition?.complete === true && filteredSeeds.length === 15;
   const content = `
     <section>
       <div class="detail-header">
@@ -864,12 +864,14 @@ async function renderResultDetail(submissionId) {
 
       ${renderResultsToolbar()}
 
+      ${detail.scoring_note ? `<section class="section"><div class="flat-panel"><strong>Scoring note</strong><p>${escapeHtml(detail.scoring_note)}</p></div></section>` : ""}
+
       <section class="section">
         <div class="section-header">
           <h2>Seed coverage</h2>
-          <p>${complete ? `<span class="badge ok">complete public cell</span>` : `<span class="badge warn">incomplete</span>`} All displayed public cells contain exactly five distinct required seeds for each simulator.</p>
+          <p>${complete ? `<span class="badge ok">complete public cell</span> This condition contains five distinct required seeds for each simulator.` : `<span class="badge warn">no result for this condition</span>`}</p>
         </div>
-        <div>${Object.entries(detail.seed_coverage.distinct_required_seeds).map(([sim, seeds]) => `<span class="badge ok">${escapeHtml(sim)}: ${seeds.length} seeds</span>`).join("")}</div>
+        ${complete ? `<div>${Object.entries(activeCondition.seeds_by_simulator).map(([sim, seeds]) => `<span class="badge ok">${escapeHtml(sim)}: ${seeds.length} seeds</span>`).join("")}</div>` : ""}
       </section>
 
       <section class="section">

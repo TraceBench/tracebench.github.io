@@ -26,7 +26,7 @@
       "Direct"
     ]
   },
-  "generated_at": "2026-07-21T10:22:23Z",
+  "generated_at": "2026-09-25T08:09:47.188315Z",
   "rows": [
     {
       "agent": "gpt-5.5",
@@ -78,6 +78,32 @@
       },
       "score": 0.653,
       "submission_id": "gemini-3-1-pro-high",
+      "submitter": "TraceBench"
+    },
+    {
+      "agent": "GPT-6 Luna",
+      "complete": true,
+      "date": "2026-09-25",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+      },
+      "model": "gpt-6-luna",
+      "rank": 3,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.46,
+      "submission_id": "gpt-6-luna-codex-high",
       "submitter": "TraceBench"
     },
     {
@@ -133,6 +159,32 @@
       "submitter": "TraceBench"
     },
     {
+      "agent": "GPT-6 Luna",
+      "complete": true,
+      "date": "2026-09-25",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+      },
+      "model": "gpt-6-luna",
+      "rank": 3,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.573,
+      "submission_id": "gpt-6-luna-codex-high",
+      "submitter": "TraceBench"
+    },
+    {
       "agent": "gemini-3.1-pro",
       "complete": true,
       "date": "2026-05-07",
@@ -142,7 +194,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
       },
       "model": "gemini_3_1_pro_high",
-      "rank": 3,
+      "rank": 4,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -168,7 +220,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip"
       },
       "model": "openrouter/minimax/minimax-m2.7",
-      "rank": 4,
+      "rank": 5,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -234,6 +286,32 @@
       },
       "score": 0.347,
       "submission_id": "gemini-3-1-pro-high",
+      "submitter": "TraceBench"
+    },
+    {
+      "agent": "GPT-6 Luna",
+      "complete": true,
+      "date": "2026-09-25",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+      },
+      "model": "gpt-6-luna",
+      "rank": 3,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.313,
+      "submission_id": "gpt-6-luna-codex-high",
       "submitter": "TraceBench"
     },
     {
@@ -315,6 +393,32 @@
       "submitter": "TraceBench"
     },
     {
+      "agent": "GPT-6 Luna",
+      "complete": true,
+      "date": "2026-09-25",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+      },
+      "model": "gpt-6-luna",
+      "rank": 4,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.673,
+      "submission_id": "gpt-6-luna-codex-high",
+      "submitter": "TraceBench"
+    },
+    {
       "agent": "minimax-m2.7",
       "complete": true,
       "date": "2026-05-06",
@@ -324,7 +428,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip"
       },
       "model": "openrouter/minimax/minimax-m2.7",
-      "rank": 4,
+      "rank": 5,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -390,6 +494,32 @@
       },
       "score": 0.647,
       "submission_id": "gemini-3-1-pro-high",
+      "submitter": "TraceBench"
+    },
+    {
+      "agent": "GPT-6 Luna",
+      "complete": true,
+      "date": "2026-09-25",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+      },
+      "model": "gpt-6-luna",
+      "rank": 3,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.633,
+      "submission_id": "gpt-6-luna-codex-high",
       "submitter": "TraceBench"
     },
     {
@@ -471,6 +601,32 @@
       "submitter": "TraceBench"
     },
     {
+      "agent": "GPT-6 Luna",
+      "complete": true,
+      "date": "2026-09-25",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+      },
+      "model": "gpt-6-luna",
+      "rank": 4,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.507,
+      "submission_id": "gpt-6-luna-codex-high",
+      "submitter": "TraceBench"
+    },
+    {
       "agent": "minimax-m2.7",
       "complete": true,
       "date": "2026-05-19",
@@ -480,7 +636,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip"
       },
       "model": "openrouter/minimax/minimax-m2.7",
-      "rank": 4,
+      "rank": 5,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -523,6 +679,32 @@
       "submitter": "TraceBench"
     },
     {
+      "agent": "GPT-6 Luna",
+      "complete": true,
+      "date": "2026-09-25",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+      },
+      "model": "gpt-6-luna",
+      "rank": 2,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.353,
+      "submission_id": "gpt-6-luna-codex-high",
+      "submitter": "TraceBench"
+    },
+    {
       "agent": "gemini-3.1-pro",
       "complete": true,
       "date": "2026-05-06",
@@ -532,7 +714,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
       },
       "model": "gemini_3_1_pro_high",
-      "rank": 2,
+      "rank": 3,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -627,6 +809,32 @@
       "submitter": "TraceBench"
     },
     {
+      "agent": "GPT-6 Luna",
+      "complete": true,
+      "date": "2026-09-25",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
+      },
+      "model": "gpt-6-luna",
+      "rank": 4,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.673,
+      "submission_id": "gpt-6-luna-codex-high",
+      "submitter": "TraceBench"
+    },
+    {
       "agent": "minimax-m2.7",
       "complete": true,
       "date": "2026-05-06",
@@ -636,7 +844,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip"
       },
       "model": "openrouter/minimax/minimax-m2.7",
-      "rank": 4,
+      "rank": 5,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
