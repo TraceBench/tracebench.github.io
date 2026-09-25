@@ -1,0 +1,1908 @@
+{
+  "agent": "DeepSeek V4.1 Flash",
+  "archive_contract": {
+    "contains_artifacts": true,
+    "contains_raw_scores": true,
+    "contains_raw_trajectories": true,
+    "run_count": 115,
+    "schema_version": 1
+  },
+  "canonical_score": 0.887,
+  "condition_results": [
+    {
+      "complete": true,
+      "distinct_seed_count": 15,
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.9,
+      "seeds_by_simulator": {
+        "BallDrop": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "BounceBall": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MassSlide": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "complete": true,
+      "distinct_seed_count": 15,
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.807,
+      "seeds_by_simulator": {
+        "BallDrop": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "BounceBall": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MassSlide": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "complete": false,
+      "distinct_seed_count": 14,
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": null,
+      "seeds_by_simulator": {
+        "BallDrop": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "BounceBall": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "MassSlide": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "complete": true,
+      "distinct_seed_count": 15,
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.887,
+      "seeds_by_simulator": {
+        "BallDrop": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "BounceBall": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MassSlide": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "complete": true,
+      "distinct_seed_count": 15,
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.927,
+      "seeds_by_simulator": {
+        "BallDrop": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "BounceBall": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MassSlide": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "complete": true,
+      "distinct_seed_count": 15,
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.94,
+      "seeds_by_simulator": {
+        "BallDrop": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "BounceBall": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MassSlide": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "complete": false,
+      "distinct_seed_count": 11,
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": null,
+      "seeds_by_simulator": {
+        "BallDrop": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "BounceBall": [
+          3
+        ],
+        "MassSlide": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "complete": true,
+      "distinct_seed_count": 15,
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.967,
+      "seeds_by_simulator": {
+        "BallDrop": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "BounceBall": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MassSlide": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    }
+  ],
+  "date": "2026-09-25",
+  "downloads": {
+    "benchmark_dataset": "https://huggingface.co/datasets/eth-siplab/tracebench",
+    "complete_results_table": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+    "trajectory_archive": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+  },
+  "model": "deepseek/deepseek-v4.1-flash",
+  "per_seed_results": [
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-orbit_0",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 0,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-orbit_1",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 1,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-orbit_2",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 2,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-orbit_3",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 3,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-orbit_4",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 4,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-orbit_0",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 0,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-orbit_1",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 1,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-orbit_2",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 2,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-orbit_3",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 3,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-orbit_4",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 4,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-orbit_0",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 0,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-orbit_1",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 1,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-orbit_2",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 2,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-orbit_3",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.5,
+      "seed": 3,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-orbit_4",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 4,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-orbit_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.7,
+      "seed": 0,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-orbit_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 1,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-orbit_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 2,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-orbit_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 3,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-orbit_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 4,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-orbit_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.9,
+      "seed": 0,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-orbit_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.6,
+      "seed": 1,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-orbit_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.9,
+      "seed": 2,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-orbit_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.9,
+      "seed": 3,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-orbit_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.7,
+      "seed": 4,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-orbit_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.9,
+      "seed": 0,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-orbit_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 1,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-orbit_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.7,
+      "seed": 2,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-orbit_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 3,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-orbit_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.6,
+      "seed": 4,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-tide_0",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.3,
+      "seed": 0,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-tide_1",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.7,
+      "seed": 1,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-tide_2",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.9,
+      "seed": 2,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-tide_3",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 3,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-tide_4",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.6,
+      "seed": 4,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-tide_0",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.5,
+      "seed": 0,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-tide_1",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.7,
+      "seed": 1,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-tide_2",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 2,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-tide_3",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.5,
+      "seed": 3,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-tide_0",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.9,
+      "seed": 0,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-tide_1",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.6,
+      "seed": 1,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-tide_2",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.5,
+      "seed": 2,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-tide_3",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.7,
+      "seed": 3,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-tide_4",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.6,
+      "seed": 4,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-flame_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 0,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-flame_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 1,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-flame_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 2,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-flame_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.9,
+      "seed": 3,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-flame_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 4,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-flame_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 0,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-flame_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 1,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-flame_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 2,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-flame_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 3,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-flame_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.7,
+      "seed": 4,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-flame_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.8,
+      "seed": 0,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-flame_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.7,
+      "seed": 1,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-flame_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 1.0,
+      "seed": 2,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-flame_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.7,
+      "seed": 3,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-flame_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.9,
+      "seed": 4,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-pine_0",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 0,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-pine_1",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 1,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-pine_2",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 2,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-pine_3",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.9,
+      "seed": 3,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-pine_4",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 4,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-pine_0",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.7,
+      "seed": 0,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-pine_1",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 1,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-pine_2",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.8,
+      "seed": 2,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-pine_3",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 3,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-pine_4",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 4,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-pine_0",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.9,
+      "seed": 0,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-pine_1",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 1,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-pine_2",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.9,
+      "seed": 2,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-pine_3",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.9,
+      "seed": 3,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "frost_01234-pine_4",
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.8,
+      "seed": 4,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-pine_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.9,
+      "seed": 0,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-pine_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 1,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-pine_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.9,
+      "seed": 2,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-pine_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 3,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-pine_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 4,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-pine_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 0,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-pine_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.7,
+      "seed": 1,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-pine_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.9,
+      "seed": 2,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-pine_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 3,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-pine_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 4,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-pine_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 0,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-pine_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 1,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-pine_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.9,
+      "seed": 2,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-pine_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.8,
+      "seed": 3,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-pine_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 4,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-harbor_0",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.3,
+      "seed": 0,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-harbor_1",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.8,
+      "seed": 1,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-harbor_2",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.5,
+      "seed": 2,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-harbor_3",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.8,
+      "seed": 3,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-harbor_4",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.9,
+      "seed": 4,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-harbor_3",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.4,
+      "seed": 3,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-harbor_0",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.7,
+      "seed": 0,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-harbor_1",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.4,
+      "seed": 1,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-harbor_2",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.6,
+      "seed": 2,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-harbor_3",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.9,
+      "seed": 3,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-harbor_4",
+      "scope": {
+        "context": "None",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.6,
+      "seed": 4,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-cloud_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 0,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-cloud_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 1,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-cloud_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 2,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-cloud_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 3,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-cloud_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.9,
+      "seed": 4,
+      "simulator": "BallDrop",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-cloud_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.9,
+      "seed": 0,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-cloud_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 1,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-cloud_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 2,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-cloud_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 3,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-cloud_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 4,
+      "simulator": "BounceBall",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-cloud_0",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.9,
+      "seed": 0,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-cloud_1",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 1,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-cloud_2",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.8,
+      "seed": 2,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-cloud_3",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 3,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    },
+    {
+      "artifact_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+      "question_id": "gentle_01234-cloud_4",
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 1.0,
+      "seed": 4,
+      "simulator": "MassSlide",
+      "trajectory_url": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+    }
+  ],
+  "scoring_note": "Interim release: six conditions have full five-seed coverage for all three simulators and are ranked. Two high-noise, no-context conditions have partial coverage and no leaderboard score.",
+  "seed_coverage": {
+    "complete_condition_count": 6,
+    "partial_condition_count": 2,
+    "public_cells_complete": false,
+    "required_seeds_per_simulator": 5
+  },
+  "submission_id": "deepseek-v4-1-flash-openrouter",
+  "submitter": "TraceBench"
+}

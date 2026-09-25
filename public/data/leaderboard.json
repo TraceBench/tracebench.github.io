@@ -26,8 +26,34 @@
       "Direct"
     ]
   },
-  "generated_at": "2026-09-25T08:14:05.340794Z",
+  "generated_at": "2026-09-25T19:51:00.833830Z",
   "rows": [
+    {
+      "agent": "DeepSeek V4.1 Flash",
+      "complete": true,
+      "date": "2026-09-25",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+      },
+      "model": "deepseek/deepseek-v4.1-flash",
+      "rank": 1,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.9,
+      "submission_id": "deepseek-v4-1-flash-openrouter",
+      "submitter": "TraceBench"
+    },
     {
       "agent": "gpt-5.5",
       "complete": true,
@@ -38,7 +64,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip"
       },
       "model": "gpt-5.5",
-      "rank": 1,
+      "rank": 2,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -64,7 +90,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
       },
       "model": "gemini_3_1_pro_high",
-      "rank": 2,
+      "rank": 3,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -90,7 +116,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
       },
       "model": "gpt-6-luna",
-      "rank": 3,
+      "rank": 4,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -107,6 +133,32 @@
       "submitter": "TraceBench"
     },
     {
+      "agent": "DeepSeek V4.1 Flash",
+      "complete": true,
+      "date": "2026-09-25",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+      },
+      "model": "deepseek/deepseek-v4.1-flash",
+      "rank": 1,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Code"
+      },
+      "score": 0.807,
+      "submission_id": "deepseek-v4-1-flash-openrouter",
+      "submitter": "TraceBench"
+    },
+    {
       "agent": "gpt-5.5",
       "complete": true,
       "date": "2026-05-06",
@@ -116,7 +168,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip"
       },
       "model": "gpt-5.5",
-      "rank": 1,
+      "rank": 2,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -142,7 +194,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/claude-4-opus-high.zip"
       },
       "model": "claude-opus-4-6",
-      "rank": 2,
+      "rank": 3,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -168,7 +220,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
       },
       "model": "gpt-6-luna",
-      "rank": 3,
+      "rank": 4,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -194,7 +246,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
       },
       "model": "gemini_3_1_pro_high",
-      "rank": 4,
+      "rank": 5,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -220,7 +272,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip"
       },
       "model": "openrouter/minimax/minimax-m2.7",
-      "rank": 5,
+      "rank": 6,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -315,6 +367,32 @@
       "submitter": "TraceBench"
     },
     {
+      "agent": "DeepSeek V4.1 Flash",
+      "complete": true,
+      "date": "2026-09-25",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+      },
+      "model": "deepseek/deepseek-v4.1-flash",
+      "rank": 1,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Code"
+      },
+      "score": 0.887,
+      "submission_id": "deepseek-v4-1-flash-openrouter",
+      "submitter": "TraceBench"
+    },
+    {
       "agent": "gpt-5.5",
       "complete": true,
       "date": "2026-05-06",
@@ -324,7 +402,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip"
       },
       "model": "gpt-5.5",
-      "rank": 1,
+      "rank": 2,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -350,7 +428,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
       },
       "model": "gemini_3_1_pro_high",
-      "rank": 2,
+      "rank": 3,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -376,7 +454,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/claude-4-opus-high.zip"
       },
       "model": "claude-opus-4-6",
-      "rank": 3,
+      "rank": 4,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -402,7 +480,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
       },
       "model": "gpt-6-luna",
-      "rank": 4,
+      "rank": 5,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -428,7 +506,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip"
       },
       "model": "openrouter/minimax/minimax-m2.7",
-      "rank": 5,
+      "rank": 6,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -445,6 +523,32 @@
       "submitter": "TraceBench"
     },
     {
+      "agent": "DeepSeek V4.1 Flash",
+      "complete": true,
+      "date": "2026-09-25",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+      },
+      "model": "deepseek/deepseek-v4.1-flash",
+      "rank": 1,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "None",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.927,
+      "submission_id": "deepseek-v4-1-flash-openrouter",
+      "submitter": "TraceBench"
+    },
+    {
       "agent": "gpt-5.5",
       "complete": true,
       "date": "2026-05-06",
@@ -454,7 +558,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip"
       },
       "model": "gpt-5.5",
-      "rank": 1,
+      "rank": 2,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -480,7 +584,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
       },
       "model": "gemini_3_1_pro_high",
-      "rank": 2,
+      "rank": 3,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -506,7 +610,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
       },
       "model": "gpt-6-luna",
-      "rank": 3,
+      "rank": 4,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -523,6 +627,32 @@
       "submitter": "TraceBench"
     },
     {
+      "agent": "DeepSeek V4.1 Flash",
+      "complete": true,
+      "date": "2026-09-25",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+      },
+      "model": "deepseek/deepseek-v4.1-flash",
+      "rank": 1,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "High",
+        "task_mode": "Direct"
+      },
+      "score": 0.94,
+      "submission_id": "deepseek-v4-1-flash-openrouter",
+      "submitter": "TraceBench"
+    },
+    {
       "agent": "gpt-5.5",
       "complete": true,
       "date": "2026-05-06",
@@ -532,7 +662,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip"
       },
       "model": "gpt-5.5",
-      "rank": 1,
+      "rank": 2,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -558,7 +688,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/claude-4-opus-high.zip"
       },
       "model": "claude-opus-4-6",
-      "rank": 2,
+      "rank": 3,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -584,7 +714,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
       },
       "model": "gemini_3_1_pro_high",
-      "rank": 3,
+      "rank": 4,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -610,7 +740,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
       },
       "model": "gpt-6-luna",
-      "rank": 4,
+      "rank": 5,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -636,7 +766,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip"
       },
       "model": "openrouter/minimax/minimax-m2.7",
-      "rank": 5,
+      "rank": 6,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -731,6 +861,32 @@
       "submitter": "TraceBench"
     },
     {
+      "agent": "DeepSeek V4.1 Flash",
+      "complete": true,
+      "date": "2026-09-25",
+      "links": {
+        "artifacts": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip",
+        "results": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/results.parquet",
+        "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/deepseek-v4-1-flash-openrouter.zip"
+      },
+      "model": "deepseek/deepseek-v4.1-flash",
+      "rank": 1,
+      "required_seed_summary": {
+        "BallDrop": 5,
+        "BounceBall": 5,
+        "MassSlide": 5
+      },
+      "scope": {
+        "context": "High",
+        "examples": "Three Examples",
+        "noise": "Low",
+        "task_mode": "Direct"
+      },
+      "score": 0.967,
+      "submission_id": "deepseek-v4-1-flash-openrouter",
+      "submitter": "TraceBench"
+    },
+    {
       "agent": "gpt-5.5",
       "complete": true,
       "date": "2026-05-06",
@@ -740,7 +896,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-5-5-codex-high.zip"
       },
       "model": "gpt-5.5",
-      "rank": 1,
+      "rank": 2,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -766,7 +922,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/claude-4-opus-high.zip"
       },
       "model": "claude-opus-4-6",
-      "rank": 2,
+      "rank": 3,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -792,7 +948,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gemini-3-1-pro-high.zip"
       },
       "model": "gemini_3_1_pro_high",
-      "rank": 3,
+      "rank": 4,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -818,7 +974,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/gpt-6-luna-codex-high.zip"
       },
       "model": "gpt-6-luna",
-      "rank": 4,
+      "rank": 5,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,
@@ -844,7 +1000,7 @@
         "trajectories": "https://huggingface.co/datasets/eth-siplab/tracebench/resolve/main/submissions/minimax-m2-7.zip"
       },
       "model": "openrouter/minimax/minimax-m2.7",
-      "rank": 5,
+      "rank": 6,
       "required_seed_summary": {
         "BallDrop": 5,
         "BounceBall": 5,

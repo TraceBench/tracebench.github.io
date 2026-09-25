@@ -843,6 +843,11 @@ async function renderResultDetail(submissionId) {
   const activeCondition = detail.condition_results.find(item => scopeEquals(item.scope, state.results.scope));
   const filteredSeeds = detail.per_seed_results.filter(item => scopeEquals(item.scope, state.results.scope));
   const complete = activeCondition?.complete === true && filteredSeeds.length === 15;
+  const coverageMessage = complete
+    ? '<span class="badge ok">complete public cell</span> This condition contains five distinct required seeds for each simulator.'
+    : filteredSeeds.length
+      ? `<span class="badge warn">partial coverage</span> ${filteredSeeds.length} of 15 runs have scores; this condition has no leaderboard score.`
+      : '<span class="badge warn">no result for this condition</span>';
   const content = `
     <section>
       <div class="detail-header">
@@ -869,7 +874,7 @@ async function renderResultDetail(submissionId) {
       <section class="section">
         <div class="section-header">
           <h2>Seed coverage</h2>
-          <p>${complete ? `<span class="badge ok">complete public cell</span> This condition contains five distinct required seeds for each simulator.` : `<span class="badge warn">no result for this condition</span>`}</p>
+          <p>${coverageMessage}</p>
         </div>
         ${complete ? `<div>${Object.entries(activeCondition.seeds_by_simulator).map(([sim, seeds]) => `<span class="badge ok">${escapeHtml(sim)}: ${seeds.length} seeds</span>`).join("")}</div>` : ""}
       </section>
